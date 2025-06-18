@@ -129,3 +129,40 @@ plt.xticks(rotation=30, ha='right')  # inclinaison + alignement lisible
 plt.tight_layout()
 plt.grid(axis="y")
 plt.show()
+
+# 11. Répartition des types de vulnérabilités (CWE)
+df["CWE Description"].fillna("Non spécifié", inplace=True)
+
+top_cwe = df["CWE Description"].value_counts().head(6)
+
+plt.figure(figsize=(7, 7))
+top_cwe.plot.pie(
+    autopct="%1.1f%%",
+    startangle=90,
+    colors=sns.color_palette("Set2"),
+    ylabel=""
+)
+plt.title("11. Répartition des types de vulnérabilités (CWE)")
+plt.show()
+
+# 12. Distribution des scores EPSS (probabilité d’exploitation)
+df["EPSS Score"] = pd.to_numeric(df["EPSS Score"], errors="coerce")
+df_epss = df[df["EPSS Score"].notnull()]
+
+plt.figure(figsize=(8, 4))
+sns.histplot(df_epss["EPSS Score"], bins=30, kde=True, color='teal')
+plt.title("12. Distribution des scores EPSS")
+plt.xlabel("Score EPSS (probabilité d'exploitation)")
+plt.ylabel("Nombre de vulnérabilités")
+plt.grid(True)
+plt.show()
+
+# 13. Évolution hebdomadaire des vulnérabilités détectées (non cumulée)
+df["Date"] = pd.date_range(start="2023-01-01", periods=len(df), freq="D")
+
+df.set_index("Date").resample("W").size().plot(figsize=(10, 4), marker='o')
+plt.title("13. Évolution hebdomadaire des vulnérabilités détectées")
+plt.xlabel("Semaine")
+plt.ylabel("Nombre de vulnérabilités")
+plt.grid(True)
+plt.show()
